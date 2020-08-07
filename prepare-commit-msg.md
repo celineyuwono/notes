@@ -1,5 +1,15 @@
 ## Adding branch name to your commit messages
 
+### Result
+```
+git commit -m "Test Commit."
+// Before
+Commit Message: Test Commit.
+// After
+Commit Message: [Branch-name] Test Commit.
+```
+
+### Steps
 1. Create prepare-commit-msg file in your git repository
 ```
 cd .git/hooks/
@@ -17,9 +27,9 @@ fi
 ```
 3. Set file to executable
 ```
-chmod +x prepare-commit
+chmod +x prepare-commit-msg
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzU3NjI0NzBdfQ==
+eyJoaXN0b3J5IjpbLTEzODA4MjM3MzFdfQ==
 -->
