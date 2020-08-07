@@ -1,15 +1,25 @@
 ## Vagrant Test Box
 
-### Making Vagrant Box  
-```
-mkdir training-box  
-cd training-box/  
+### Making a Vagrant Box 
+``` 
 vagrant init hashicorp/bionic64  
 vagrant up  
-vagrant ssh  
-// In Vagrantfile, add this line to be able to access
-// the Vagrant server from localhost:3007
-// config.vm.network "forwarded_port", guest: 8080, host: 3007
+vagrant ssh
+```
+### Example Vagrantfile
+```
+Vagrant.configure("2") do |config|
+config.vm.box = "hashicorp/bionic64"
+
+// Route Vagrant port 8080 to localhost 3007
+config.vm.network "forwarded_port", guest: 8080, host: 3007
+
+end
+```
+### Before Any Installation
+```
+vagrant ssh
+sudo apt update && sudo apt upgrade
 ```
 ### How to Install Chef Workstation  
 ```
@@ -29,24 +39,35 @@ docker --version
 #### https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-18-04
 ```
 sudo apt install openjdk-8-jdk  
-wget -q -O - [http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key](https://slack-redir.net/link?url=http%3A%2F%2Fpkg.jenkins-ci.org%2Fdebian%2Fjenkins-ci.org.key) | sudo apt-key add -  
-sudo sh -c 'echo deb [http://pkg.jenkins-ci.org/debian-stable](https://slack-redir.net/link?url=http%3A%2F%2Fpkg.jenkins-ci.org%2Fdebian-stable) binary/ > /etc/apt/sources.list.d/jenkins.list'  
-sudo apt update  
+wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -  
+sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stablebinary/ > /etc/apt/sources.list.d/jenkins.list'  
+sudo apt update 
 sudo apt install jenkins  
 sudo systemctl start jenkins  
 sudo systemctl status jenkins  
 sudo ufw allow 8080  
 sudo ufw status  
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword// See running ports  
-sudo netstat -tulpn | grep LISTEN
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-// Installing Ansible  
+### Installing Ansible  
+```
 sudo apt update  
 sudo apt install software-properties-common  
 sudo apt-add-repository --yes --update ppa:ansible/ansible  
-sudo apt install ansible// Installing Kitchen with Ruby Gem  
+sudo apt install ansible
+```
+### Installing Kitchen with Ruby Gem 
+``` 
 sudo apt install ruby-full  
 gem install test-kitchen
+```
+### Other Useful Commands
+```
+// See running ports 
+sudo netstat -tulpn | grep LISTEN
+// See running services 
+systemctl list-units --type service | grep nginx
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMzM3NDY5NF19
+eyJoaXN0b3J5IjpbMTI4MDQxNzMzN119
 -->
