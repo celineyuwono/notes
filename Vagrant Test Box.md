@@ -1,12 +1,18 @@
-## V
- Making Vagrant Box  
+## Vagrant Test Box
+
+### Making Vagrant Box  
+```
 mkdir training-box  
 cd training-box/  
 vagrant init hashicorp/bionic64  
 vagrant up  
 vagrant ssh  
-In Vagrantfile, add this line: config.vm.network "forwarded_port", guest: 8080, host: 3007 // To test on local host, use localhost:3007  
-sudo apt update && sudo apt upgrade// Installing Chef Workstation  
+// In Vagrantfile, add this line to be able to access
+// the server from localhost:3007
+// config.vm.network "forwarded_port", guest: 8080, host: 3007
+sudo apt update && sudo apt upgrade
+```
+// Installing Chef Workstation  
 wget  [https://packages.chef.io/files/stable/chef-workstation/0.2.43/ubuntu/18.04/chef-workstation_0.2.43-1_amd64.deb](https://slack-redir.net/link?url=https%3A%2F%2Fpackages.chef.io%2Ffiles%2Fstable%2Fchef-workstation%2F0.2.43%2Fubuntu%2F18.04%2Fchef-workstation_0.2.43-1_amd64.deb)  
 sudo dpkg -i chef-workstation_0.2.43-1_amd64.deb  
 chef -v// Installing Docker  
@@ -32,5 +38,5 @@ sudo apt install ansible// Installing Kitchen with Ruby Gem
 sudo apt install ruby-full  
 gem install test-kitchen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzY0NTI4OThdfQ==
+eyJoaXN0b3J5IjpbMzY3Njc2NTEyXX0=
 -->
