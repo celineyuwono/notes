@@ -6,7 +6,7 @@ git commit -m "Test Commit."
 // Before
 Commit Message: Test Commit.
 // After
-Commit Message: [Branch-name] Test Commit.
+Commit Message: [branch-name] Test Commit.
 ```
 
 ### Steps
@@ -29,7 +29,6 @@ fi
 ```
 chmod +x prepare-commit-msg
 ```
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODA4MjM3MzFdfQ==
+eyJoaXN0b3J5IjpbLTk2OTcyMjE3N119
 -->
