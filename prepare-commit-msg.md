@@ -18,7 +18,8 @@ sudo vim prepare-commit-msg
 2. Paste this and `:wq`.
 ```
 NAME=$(git branch | grep '*' | sed 's/* //')  
-DESCRIPTION=$(git config branch."$NAME".description)echo ["$NAME"'] '$(cat "$1") > "$1"  
+DESCRIPTION=$(git config branch."$NAME".description)
+echo ["$NAME"'] '$(cat "$1") > "$1"  
 if [ -n "$DESCRIPTION" ]  
 then  
    echo "" >> "$1"  
@@ -30,5 +31,5 @@ fi
 chmod +x prepare-commit-msg
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2OTcyMjE3N119
+eyJoaXN0b3J5IjpbLTk0MjY3Nzk3MSwtOTY5NzIyMTc3XX0=
 -->
