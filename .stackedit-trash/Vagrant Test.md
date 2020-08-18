@@ -18,22 +18,25 @@ screenshot
 	- Therefore, storage is an external plugin to the cluster.
 - SCREENSHOT
 
-### More about PVs
-- Persistent volumes are not namespaced.
+### How to c
+- Persistent volumes are **not** namespaced.
 - There are local vs remote volumes.
 - Kubernetes Roles:
 	- Kubernetes Admin sets up and maintain cluster.
 	- Kubernetes User deploys application in cluster.
 - Kubernetes Administrator needs to configure actual storage. Example: Make sure nfs is there, configure cloud storage for PV to use, and then create PV components from storage backends.
-- Kubenetes Developer needs to configure a `kind: PersistentVolumeClaim (PVC)` YAML file to use the PV. Then in the kind: Pod YAML file, specify the PersistentVolumeClaim. So, only specified nodes have access to the PV.
+- Kubenetes Developer needs to configure a `kind: PersistentVolumeClaim (PVC)` YAML file to use the PV. Then in the kind: Pod YAML file, specify the `PersistentVolumeClaim`. So, only specified nodes have access to the PV.
 - PVC must exist in the same namespace as pod using claim.
 - Volume is mounted to pod, then mounted to containers.
-- Two local volume types: **ConfigMap** (maps url to IP) and **Secret** (base64 contain user credentials). Not created via PV or PVC, but own components and created and managed by Kubernetes itself.
-	- Create ConfigMap or Secret component and mount in Pod.
+- Two local volume types: **ConfigMap** (maps url to IP) and **Secret** (base64 contain user credentials). These are not created via PV or PVC, but are own components and created and managed by Kubernetes itself.
+- Create ConfigMap or Secret component and mount in Pod.
 
-<![if !supportLists]>o <![endif]>Storage Class: Provisions PV dynamically when PVC claims it. Created using YAML File (kind: StorageClass). Specify provisioner, example: provisioner: kubernetes.io/ws-ebs. Kubernetes provides provisioners (internal) but external is also possible. Storage backend is specified here.
-
-<![if !supportLists]>o <![endif]>If we use Storage Class, this will be the flow: Pod claims storage via PVC -> PVC requests SC -> SC will provision or create PV that meets the needs of the claim using provisioner from actual storage backend.
+### Storage Class (SC)
+- SC provisions PV dynamically when PVC claims it. Created using YAML File `kind: StorageClass`. Specify provisioner (ex: `provisioner: kubernetes.io/ws-ebs`). Kubernetes provides provisioners (internal) but external is also possible. Storage backend is specified here.
+- If we use Storage Class, this will be the flow: 
+	1. Pod claims storage via PVC.
+	2. PVC requests SC.
+	3. SC will provision or create PV that meets the needs of the claim using provisioner from actual storage backend.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NzI3Mjc4Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTkwNTIyNzMyNiw3MzA5OTgxMTZdfQ==
 -->
