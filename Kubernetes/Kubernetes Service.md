@@ -10,7 +10,7 @@
 - In your YAML file, specify service `kind: service` for each pod. The result is that the cluster IP for the replica of each pod in different nodes will be the same (see picture).
 - We can specify **load balancer** type for each pod (ex. front-end UI pod) and allow user to access that pod from that IP address.
 - Services also tell other pods what your specific pod provides.
-- While pods come and go, the service IP addresses and ports remain the same. And other applications can find your service through Kurbenetes Service Discovery.
+- While pods come and go, the service IP addresses and ports remain the same. And other applications can find your service through Kurbenetes **Service Discovery**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMTcyMzQ0Ml19
+eyJoaXN0b3J5IjpbMjM1MDI2Njc0XX0=
 -->
