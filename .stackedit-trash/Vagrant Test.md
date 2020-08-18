@@ -2,8 +2,7 @@
 
 ### Source URL: [https://www.youtube.com/watch?v=0swOh5C3OVM&list=PLy7NrYWoggjwPggqtFsI_zMAwvG0SqYCb&index=26](https://www.youtube.com/watch?v=0swOh5C3OVM&list=PLy7NrYWoggjwPggqtFsI_zMAwvG0SqYCb&index=26)
 
-screenshot
-![](https://i.ibb.co/G5DkKDM/Screen-Shot-2020-08-18-at-10-09-05.png)
+![Persist Data in Kubernetes](https://i.ibb.co/G5DkKDM/Screen-Shot-2020-08-18-at-10-09-05.png)
 
 ### Things to Pay Attention to...
 - You will need to configure the Persistent Volumes yourself. 
@@ -17,7 +16,7 @@ screenshot
 - Where does this storage comes from and who makes it available to the cluster?
 	- Kubernetes doesn’t care about actual storage, so we have to decide and take care of it ourselves. Kubernetes only created the Persistent Volume component.
 	- Therefore, storage is an external plugin to the cluster.
-- SCREENSHOT
+![](https://i.ibb.co/y6ytSxy/Screen-Shot-2020-08-18-at-10-09-12.png)
 
 ### How to Configure PVs
 - Persistent volumes are **not** namespaced.
@@ -41,5 +40,5 @@ screenshot
 	2. PVC requests SC.
 	3. SC will provision or create PV that meets the needs of the claim using provisioner from actual storage backend.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODUyMDU0MTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE4ODQyMjgzNDUsNzMwOTk4MTE2XX0=
 -->
