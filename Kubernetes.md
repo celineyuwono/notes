@@ -7,31 +7,24 @@
 
 ![A quick recap](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
 
-###  Components
+###  Master Components
 
-1. **Kube-apiserver:** Management part of cluster.2. <![endif]>Etcd:
-
-<![if !supportLists]>a. <![endif]>Stores configuration and current state of Kubernetes cluster (database).
-
-<![if !supportLists]>b. <![endif]>Distributed key-value store.
-
-<![if !supportLists]>c. <![endif]>Database of the cloud.
-
-<![if !supportLists]>d. <![endif]>Anything that happens on the cloud first happens in etcd. API server writes server to etcd first, and what is in etcd and cloud will be checked if matching.
-
-<![if !supportLists]>3. <![endif]>Kube-scheduler: Assigns nodes to newly created pods.
-
-<![if !supportLists]>4. <![endif]>Kube-controller-manager: Regulate the state of cluster with its controllers.
-
-<![if !supportLists]>a. <![endif]>Node Controller: Keeps track of the state of nodes and takes action if nodes go down.
-
-<![if !supportLists]>b. <![endif]>Replication Controller: Maintain and control pods based on replication.
+1. **Kube-apiserver:** Management part of cluster.
+2. **Etcd:**
+	- Stores configuration and current state of Kubernetes cluster (database).
+	- Distributed key-value store.
+	- Database of the cloud.
+	- Anything that happens on the cloud first happens in etcd. API server writes server to etcd first, and what is in etcd and cloud will be checked if matching.
+3. **Kube-scheduler:** Assigns nodes to newly created pods.
+4. **Kube-controller-manager:** Regulate the state of cluster with its controllers.
+	- **Node Controller:** Keeps track of the state of nodes and takes action if nodes go down.
+	- **Replication Controller**: Maintain and control pods based on replication.
 
 <![if !supportLists]>c. <![endif]>End point Controller: Populate end point objects (joins services and pods)
 
 <![if !supportLists]>d. <![endif]>Service Account and Token Controller: Responsible for API access tokens and for default accounts of new name spaces.
 
-Node Components
+### Node Components
 
 <![if !supportLists]>1. <![endif]>Kubelet: Agent that runs on each node. Ensures containers are running in a pod.
 
@@ -45,5 +38,5 @@ What Is?
 
 <![if !supportLists]>2. <![endif]>Pod: Basic building block of Kubernetes, smallest and simplest unit in the Kubernetes object model. A pod encapsulates an application container or multiple.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MjQyNTA1Nl19
+eyJoaXN0b3J5IjpbLTI1NzU0ODM4OV19
 -->
