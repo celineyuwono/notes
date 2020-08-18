@@ -6,7 +6,7 @@ https://ibb.co/vDVp14J
 https://ibb.co/THyT9g9
 
 screenshot
-![Microservices]([https://i.ibb.co/qR6nTrT/t1.png](https://i.ibb.co/qR6nTrT/t1.png))
+![Microservices](https://i.ibb.co/qR6nTrT/t1.png)
 
 ### Microservices
 - Split up monolith to multiple services, like auth.
@@ -20,7 +20,7 @@ screenshot
 ### Docker
 - Definition: Container system, put everything application needs into small image that can be run in any computer that has Docker. Eliminates program not running in production.
 
-screenshot
+![Microservices](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
 
 - With Docker, containers can share bins/libs, so if they use the same bins/libs, just take up 1 space.
 - Docker image size is small.
@@ -35,7 +35,7 @@ screenshot
 	- Service handles requests coming inside Kubernetes cluster from 1 node to another or from outside wanting to hit specific microservices. Usually a load balancer, how requests should be handled within cluster.
 	- Deployment: Define desired state. “I want three copies of this container!” Kubernetes will do it. Deployment file uses yaml or json, contains declared desire state.
 
-screenshot
+![A quick recap](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0Mzg1MTMzOF19
+eyJoaXN0b3J5IjpbMTY4NTI0MzAzNl19
 -->
