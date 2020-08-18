@@ -3,6 +3,7 @@
 ### Source URL: [https://www.youtube.com/watch?v=0swOh5C3OVM&list=PLy7NrYWoggjwPggqtFsI_zMAwvG0SqYCb&index=26](https://www.youtube.com/watch?v=0swOh5C3OVM&list=PLy7NrYWoggjwPggqtFsI_zMAwvG0SqYCb&index=26)
 
 screenshot
+![](https://i.ibb.co/G5DkKDM/Screen-Shot-2020-08-18-at-10-09-05.png)
 
 ### Things to Pay Attention to...
 - You will need to configure the Persistent Volumes yourself. 
@@ -25,11 +26,13 @@ screenshot
 	- **Kubernetes Admin** sets up and maintain cluster.
 	- **Kubernetes User** deploys application in cluster.
 - Kubernetes Administrator needs to configure actual storage (ex: Make sure nfs is there, configure cloud storage for PV to use, and then create PV components from storage backends).
-- Kubenetes Developer needs to configure a `kind: PersistentVolumeClaim (PVC)` YAML file to use the PV. Then in the kind: Pod YAML file, specify the `PersistentVolumeClaim`. So, only specified nodes have access to the PV.
+- Kubenetes Developer needs to configure a `kind: PersistentVolumeClaim (PVC)` YAML file to use the PV. Then in the `kind: Pod` YAML file, specify the `PersistentVolumeClaim`. So, only specified nodes have access to the PV.
 - PVC must exist in the same namespace as pod using claim.
 - Volume is mounted to pod, then mounted to containers.
+
+### Volume Types
 - Two local volume types: **ConfigMap** (maps url to IP) and **Secret** (base64 contain user credentials). These are not created via PV or PVC, but are own components and created and managed by Kubernetes itself.
-- Create ConfigMap or Secret component and mount in Pod.
+- Create a ConfigMap or Secret component and mount it in a Pod.
 
 ### Storage Class (SC)
 - SC provisions PV dynamically when PVC claims it. Created using YAML File `kind: StorageClass`. Specify provisioner (ex: `provisioner: kubernetes.io/ws-ebs`). Kubernetes provides provisioners (internal) but external is also possible. Storage backend is specified here.
@@ -38,5 +41,5 @@ screenshot
 	2. PVC requests SC.
 	3. SC will provision or create PV that meets the needs of the claim using provisioner from actual storage backend.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNDQ2MTg1Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEzODUyMDU0MTQsNzMwOTk4MTE2XX0=
 -->
