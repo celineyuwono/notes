@@ -25,20 +25,13 @@ screenshot
 	- Put application in image.
 
 ### Container Orchestration (Amazon ECS, Kubernetes, Docker Swarm)
-
 - Kubernetes: Automate deployment, scaling, and management of containers.
+- Vocab:
+	- Node: Instance of computer that is running Kubernetes. Kubelet is application that is running that communicates with the master node. Node run pods. A pod contains 1 or more containers.
+	- Service handles requests coming inside Kubernetes cluster from 1 node to another or from outside wanting to hit specific microservices. Usually a load balancer, how requests should be handled within cluster.
+	- Deployment: Define desired state. “I want three copies of this container!” Kubernetes will do it. Deployment file uses yaml or json, contains declared desire state.
 
-<![if !supportLists]>· <![endif]>Vocab:
-
-<![if !supportLists]>o <![endif]>Node: Instance of computer that is running Kubernetes. Kubelet is application that is running that communicates with the master node. Node run pods. A pod contains 1 or more containers.
-
-<![if !supportLists]>o <![endif]>Service handles requests coming inside Kubernetes cluster from 1 node to another or from outside wanting to hit specific microservices. Usually a load balancer, how requests should be handled within cluster.
-
-<![if !supportLists]>o <![endif]>Deployment: Define desired state. “I want three copies of this container!” Kubernetes will do it. Deployment file uses yaml or json, contains declared desire state.
-
-<![if !vml]>![A screenshot of a computer
-
-Description automatically generated](file:////Users/ts-celine.yuwono/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.png)<![endif]>
+screenshot
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTcwNDY5MF19
+eyJoaXN0b3J5IjpbLTM1ODc4NzY5NV19
 -->
