@@ -4,7 +4,7 @@
 
 1. **Parallel processing:** Using multiple processors for high volume of data with different formats/diff kinds of data (structured, semi-structured, unstructured). For example, even in a tweet, it is a mix of data so using a single processor is impossible, too time consuming. In other words, parallel processing = distributed storage and multiple processors. 
 
-Screenshot
+![The rise of Big Data](https://i.ibb.co/PrNK6GH/Screen-Shot-2020-08-18-at-10-58-15.png)
 
 2.  **Big Data:** Massive amount of data that cannot be stored, processed, analyzed using traditional ways. Big Data is used when data has high volume, requires high velocity/speed to get, has huge variety that requires high processing, must be reduced to a certain value/pre-processed, veracity/data has uncertainty, meaning high processing (ex. Twitter data).
 3. Big Data challenges -> solutions solved by Hadoop:
@@ -44,5 +44,5 @@ Input is split into chunks of data (by email, by document, by twitter feed, by D
 - Analyzing is time efficient and easy.
 - Detecting information through monitoring and generate many information from processing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjIxMDEzMV19
+eyJoaXN0b3J5IjpbNjE2OTAyNTEyXX0=
 -->
