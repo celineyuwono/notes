@@ -1,22 +1,15 @@
-<![endif]-->
+## Kubernetes
 
-Kubernetes
+### Introduction
+- Kubernetes provides automation and management of containerized application (ex. app in docker) and help in deployment and scaling with ease.
+- Has master and slave architecture. Master controls nodes.
+- Kubeadm creates Kubernetes cluster. The main commands of kubeadm are `kube init` and `kube join`.
 
-<![if !supportLists]>· <![endif]>Provides automation and management of containerized application (ex. App in docker) and help in deployment and scaling with ease.
+![A quick recap](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
 
-<![if !supportLists]>· <![endif]>Has master and slave architecture. Master controls nodes.
+###  Components
 
-<![if !supportLists]>· <![endif]>Kubeadm creates Kubernetes cluster. The main commands of kubeadm are kube init and kube join.
-
-<![if !vml]>![A screenshot of a computer
-
-Description automatically generated](file:////Users/ts-celine.yuwono/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)<![endif]>
-
-Kubernetes Components
-
-<![if !supportLists]>1. <![endif]>Kube-apiserver: Management part of cluster.
-
-<![if !supportLists]>2. <![endif]>Etcd:
+1. **Kube-apiserver:** Management part of cluster.2. <![endif]>Etcd:
 
 <![if !supportLists]>a. <![endif]>Stores configuration and current state of Kubernetes cluster (database).
 
@@ -52,5 +45,5 @@ What Is?
 
 <![if !supportLists]>2. <![endif]>Pod: Basic building block of Kubernetes, smallest and simplest unit in the Kubernetes object model. A pod encapsulates an application container or multiple.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjA3Njg4MV19
+eyJoaXN0b3J5IjpbMTA4MjQyNTA1Nl19
 -->
