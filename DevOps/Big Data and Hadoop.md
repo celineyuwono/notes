@@ -11,15 +11,13 @@ Screenshot
 	- Single central storage -> Distributed storage.
 	- Serial processing -> Parallel processing.
 	- Lack of ability to process unstructured data (or mix of data) -> ability to do so.
-4. **Hadoop:** Framework that manages big data storage in a distributed way and processes it parallelly. Components:
+ **Hadoop:** Framework that manages big data storage in a distributed way and processes it parallelly. 
 
-<![if !supportLists]>a. <![endif]>Hadoop storage unit (Hadoop HDFS): Specially designed for storing huge datasets in commodity hardware.
-
-<![if !supportLists]> i. <![endif]>NameNode (Master): Only 1 and backup. Enterprise computer. Maintains and manages the DataNode and stores the metadata.
-
-<![if !supportLists]> ii. <![endif]>DataNode (Slaves): Multiple. Usually at least 5~10. Commodity computer. DataNodes stores the actual data, does reading, writing, and processing. Performs replication as well.
-
-<![if !supportLists]> iii. <![endif]>Commodity computer is way cheaper than enterprise computer.
+### Hadoop Components
+1. **Hadoop storage unit (Hadoop HDFS):** Specially designed for storing huge datasets in commodity hardware.
+	- **NameNode (Master):** Only 1 and backup. Enterprise computer. Maintains and manages the DataNode and stores the metadata.
+	- **DataNode (Slaves):** Multiple. Usually at least 5~10. Commodity computer. DataNodes stores the actual data, does reading, writing, and processing. Performs replication as well.
+	- Commodity computer is way cheaper than enterprise computer.
 
 <![if !supportLists]> iv. <![endif]>NameNode and DataNode connected by HeartBeat: Signal that DataNode continuously sends to NameNode, shows status of DataNode.
 
@@ -59,5 +57,5 @@ Description automatically generated](file:////Users/ts-celine.yuwono/Library/Gro
 
 <![if !supportLists]>d. <![endif]>Detecting information through monitoring and generate many information from processing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU2OTg3NDI2XX0=
+eyJoaXN0b3J5IjpbMTk0MDI5MDQ3NV19
 -->
