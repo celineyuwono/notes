@@ -1,6 +1,6 @@
 ## Kubernetes Introduction
 
-### Kubernetes Architecture
+### Kubernetes Basics and Architecture
 - Kubernetes provides automation and management of containerized application (ex. app in docker) and help in deployment and scaling with ease.
 - Has master and slave architecture. Master controls nodes.
 - Kubeadm creates Kubernetes cluster. The main commands of kubeadm are `kube init` and `kube join`.
@@ -32,5 +32,5 @@
 1. **Namespace:** Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces. (kubectl get namespace).
 2. **Pod:** Basic building block of Kubernetes, smallest and simplest unit in the Kubernetes object model. A pod encapsulates an application container or multiple containers (but usually 1).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTQ0MjUzOF19
+eyJoaXN0b3J5IjpbMTU0OTQ3NjRdfQ==
 -->
