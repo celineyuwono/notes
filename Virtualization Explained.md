@@ -1,8 +1,6 @@
-<![endif]-->
+## Virtualization Explained
 
-Virtualization Explained
-
-[https://www.youtube.com/watch?v=FZR0rG3HKIk](https://www.youtube.com/watch?v=FZR0rG3HKIk)
+#### Source URL:  [https://www.youtube.com/watch?v=FZR0rG3HKIk](https://www.youtube.com/watch?v=FZR0rG3HKIk)
 
 - Create software-based version of applications, etc.
 - Make virtualization feasible: hypervisor.
@@ -12,5 +10,5 @@ Virtualization Explained
 - After hypervisor installed, you can install VM: Software-based computer, can run multiple on top of hypervisor. Hypervisor manages resources allocated to these VM from physical server. You can run different OS in different VMs. Extremely portable, can move VM from one hypervisor to another easily.
 - Benefits of Virtualization: Cost saving (can run multiple VM in 1 physical server, don’t have to have many servers), agility and speed (run new environment easily), lower down time (if server goes down, move VM to another server).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwNjA2ODgyXX0=
+eyJoaXN0b3J5IjpbLTM4NzY2MzE4NV19
 -->
