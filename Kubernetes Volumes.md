@@ -16,6 +16,7 @@
 - Where does this storage comes from and who makes it available to the cluster?
 	- Kubernetes doesn’t care about actual storage, so we have to decide and take care of it ourselves. Kubernetes only created the Persistent Volume component.
 	- Therefore, storage is an external plugin to the cluster.
+	
 ![YAML File Example](https://i.ibb.co/y6ytSxy/Screen-Shot-2020-08-18-at-10-09-12.png)
 
 ### How to Configure PVs
@@ -40,5 +41,5 @@
 	2. PVC requests SC.
 	3. SC will provision or create PV that meets the needs of the claim using provisioner from actual storage backend.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzM0OTI1NF19
+eyJoaXN0b3J5IjpbLTE1NDk3OTk3ODAsMTkxNzM0OTI1NF19
 -->
