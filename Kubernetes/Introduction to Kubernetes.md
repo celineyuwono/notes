@@ -1,15 +1,13 @@
 ## Introduction to Kubernetes
 
-### Source URL: [https://kubernetes.io/](https://kubernetes.io/)
+### Source URL: [https://www.youtube.com/watch?v=F-p_7XaEC84](https://www.youtube.com/watch?v=F-p_7XaEC84)
 
 ### Kubernetes Basics and Architecture
 - Kubernetes provides automation and management of containerized application (ex. app in docker) and help in deployment and scaling with ease.
-- Has master and slave architecture. Master controls nodes. Inside nodes, there are **pods**.
-- Pods are logical grouping of containers.
-- In docker swarm, no pods, only containers running in pods.
+- Has **master** and **slave** architecture. Master controls **nodes**. Inside nodes, there are **pods**, which are logical grouping of containers.
 - **Kubeadm** creates Kubernetes cluster. The main commands of kubeadm are `kube init` and `kube join`.
 
-![A quick recap](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
+![Working of Kubernetes](https://i.ibb.co/cxVF7z6/Screen-Shot-2020-08-18-at-10-48-27.png)
 
 ###  Master Components
 
@@ -34,7 +32,7 @@
 ### What is a ...?
 
 1. **Namespace:** Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces. (kubectl get namespace).
-2. **Pod:** Basic building block of Kubernetes, smallest and simplest unit in the Kubernetes object model. A pod encapsulates an application container or multiple containers (but usually 1).
+2. **Pod:** Basic building block of Kubernetes, smallest and simplest unit in the Kubernetes object model. A pod encapsulates an application container or multiple containers (but usually one).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzM0OTA1NjEsMjY1MDEwMTAxXX0=
+eyJoaXN0b3J5IjpbMTQzODcxNjUzOSwyNjUwMTAxMDFdfQ==
 -->
