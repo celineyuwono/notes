@@ -19,24 +19,18 @@
 4. **Kube-controller-manager:** Regulate the state of cluster with its controllers.
 	- **Node Controller:** Keeps track of the state of nodes and takes action if nodes go down.
 	- **Replication Controller**: Maintain and control pods based on replication.
-
-<![if !supportLists]>c. <![endif]>End point Controller: Populate end point objects (joins services and pods)
-
-<![if !supportLists]>d. <![endif]>Service Account and Token Controller: Responsible for API access tokens and for default accounts of new name spaces.
+	- **End point Controller:** Populate end point objects (joins services and pods).
+	- **Service Account and Token Controller:** Responsible for API access tokens and for default accounts of new name spaces.
 
 ### Node Components
+1. **Kubelet:** Agent that runs on each node. Ensures containers are running in a pod.
+2. **Kubeproxy:** Runs on each node and responsible for networking.
+3. **Container Runtime:** Software to run the container (ex. Docker).
 
-<![if !supportLists]>1. <![endif]>Kubelet: Agent that runs on each node. Ensures containers are running in a pod.
+### What is a ...?
 
-<![if !supportLists]>2. <![endif]>Kubeproxy: Runs on each node and responsible for networking.
-
-<![if !supportLists]>3. <![endif]>Container Runtime: Software to run the container, ex. Docker.
-
-What Is?
-
-<![if !supportLists]>1. <![endif]>Namespace: Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces. (kubectl get namespace).
-
-<![if !supportLists]>2. <![endif]>Pod: Basic building block of Kubernetes, smallest and simplest unit in the Kubernetes object model. A pod encapsulates an application container or multiple.
+1. **Namespace:** Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces. (kubectl get namespace).
+2. **Pod:** Basic building block of Kubernetes, smallest and simplest unit in the Kubernetes object model. A pod encapsulates an application container or multiple containers (but usually 1).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NzU0ODM4OV19
+eyJoaXN0b3J5IjpbLTQ2OTAwNzY0OV19
 -->
