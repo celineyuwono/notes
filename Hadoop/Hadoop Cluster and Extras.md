@@ -1,7 +1,9 @@
 ## Hadoop Cluster and Extras
 
-### Hadoop Cluster
+### Source URL: [https://www.tldp.org/HOWTO/openMosix-HOWTO/x135.html](https://www.tldp.org/HOWTO/openMosix-HOWTO/x135.html)
 
+### Hadoop Cluster
+![Hadoop Cluster Architecture](https://i.ibb.co/qWtGn1t/Screen-Shot-2020-08-18-at-11-05-03.png)
 - **Computer cluster:** Collection of computers that work together and is viewed as a single system. Each node (computer) of a computer cluster is set to perform the same task, controlled and scheduled by a software.
 - **Hadoop clusters** have each node set to perform the same task, controlled and schedules by the Master.
 
@@ -13,5 +15,5 @@
 - **MESOS:** Similar to YARN, can work together with YARN.
 - **Spark:** Similar to MapReduce using Java or Python, process data on Hadoop Cluster.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDMxNjQ5NThdfQ==
+eyJoaXN0b3J5IjpbMzU4Mzg0NTk4XX0=
 -->
