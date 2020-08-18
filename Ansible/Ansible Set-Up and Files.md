@@ -20,7 +20,7 @@
 2. **Playbook:** YAML file, like tasks but include name of playbook, hosts (from inventory), and roles, which is the task route. PLAY Command: `ansible-playbook -i inventory playbook.yml`. Playbooks are divided by function: Upgrading applications, uninstalling applications.
 3. **Role:** YAML file includes tasks, package, `with_items` loop through `default/my packages`, `changed_when`. Flexible way of writing, depends on your coding style. File path: `/roles/ansible-role-xxx`.	
 
-![Ansible Set-u](https://i.ibb.co/r7M1rHb/Screen-Shot-2020-08-18-at-11-21-37.png)
+![Ansible Set-Up 2](https://i.ibb.co/r7M1rHb/Screen-Shot-2020-08-18-at-11-21-37.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDk4MzE0NF19
+eyJoaXN0b3J5IjpbLTk5NDQ0OTY2Ml19
 -->
