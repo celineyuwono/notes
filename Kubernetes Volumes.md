@@ -25,7 +25,7 @@
 - **Kubernetes Roles:**
 	- **Kubernetes Admin** sets up and maintain cluster.
 	- **Kubernetes User** deploys application in cluster.
-- Kubernetes Administrator needs to configure actual storage (ex: Make sure nfs is there, configure cloud storage for PV to use, and then create PV components from storage backends).
+- Kubernetes Administrator needs to configure actual storage (ex. Make sure nfs is there, configure cloud storage for PV to use, and then create PV components from storage backends).
 - Kubenetes Developer needs to configure a `kind: PersistentVolumeClaim (PVC)` YAML file to use the PV. Then in the `kind: Pod` YAML file, specify the `PersistentVolumeClaim`. So, only specified nodes have access to the PV.
 - PVC must exist in the same namespace as pod using claim.
 - Volume is mounted to pod, then mounted to containers.
@@ -35,11 +35,11 @@
 - Create a ConfigMap or Secret component and mount it in a Pod.
 
 ### Storage Class (SC)
-- SC provisions PV dynamically when PVC claims it. Created using YAML File `kind: StorageClass`. Specify provisioner (ex: `provisioner: kubernetes.io/ws-ebs`). Kubernetes provides provisioners (internal) but external is also possible. Storage backend is specified here.
+- SC provisions PV dynamically when PVC claims it. Created using YAML File `kind: StorageClass`. Specify provisioner (ex `provisioner: kubernetes.io/ws-ebs`). Kubernetes provides provisioners (internal) but external is also possible. Storage backend is specified here.
 - If we use Storage Class, this will be the flow: 
 	1. Pod claims storage via PVC.
 	2. PVC requests SC.
 	3. SC will provision or create PV that meets the needs of the claim using provisioner from actual storage backend.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk3OTk3ODAsMTkxNzM0OTI1NF19
+eyJoaXN0b3J5IjpbLTEwODEyMjA1OTgsMTkxNzM0OTI1NF19
 -->
