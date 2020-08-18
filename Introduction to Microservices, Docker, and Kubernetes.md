@@ -1,14 +1,11 @@
 ## Introduction to Microservices, Docker, and Kubernetes
 
 #### Source URL: [https://www.youtube.com/watch?v=1xo-0gCVhTU](https://www.youtube.com/watch?v=1xo-0gCVhTU)
-https://ibb.co/ZKP2pYn
-https://ibb.co/vDVp14J
-https://ibb.co/THyT9g9
-
-screenshot
-![Microservices](https://i.ibb.co/qR6nTrT/t1.png)
 
 ### Microservices
+
+![Microservices Architecture](https://i.ibb.co/qR6nTrT/t1.png)
+
 - Split up monolith to multiple services, like auth.
 - Still has 1 user interface.
 - Advantages:
@@ -20,7 +17,7 @@ screenshot
 ### Docker
 - Definition: Container system, put everything application needs into small image that can be run in any computer that has Docker. Eliminates program not running in production.
 
-![Microservices](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
+![VM vs Containers](https://i.ibb.co/ctHYSCG/Screen-Shot-2020-08-18-at-9-31-43.png)
 
 - With Docker, containers can share bins/libs, so if they use the same bins/libs, just take up 1 space.
 - Docker image size is small.
@@ -37,5 +34,5 @@ screenshot
 
 ![A quick recap](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NTI0MzAzNl19
+eyJoaXN0b3J5IjpbLTMwODQ0OTkzXX0=
 -->
