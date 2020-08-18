@@ -2,21 +2,16 @@
 
 ### Source URL: [https://www.youtube.com/watch?v=iANBytZ26MI](https://www.youtube.com/watch?v=iANBytZ26MI)
 
-1. **Parallel processing:** Using multiple processors for high volume of data with different formats/diff kinds of data (structured, semi-structured, unstructured). For example, even in a tweet, it is a mix of data so using a single processor is impossible, too time consuming. In other words, parallel processing = distributed storage and multiple processors. <![if !vml]>![A picture containing table
+1. **Parallel processing:** Using multiple processors for high volume of data with different formats/diff kinds of data (structured, semi-structured, unstructured). For example, even in a tweet, it is a mix of data so using a single processor is impossible, too time consuming. In other words, parallel processing = distributed storage and multiple processors. 
 
-Description automatically generated](file:////Users/ts-celine.yuwono/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)<![endif]>
+Screenshot
 
-2. Big Data: Massive amount of data that cannot be stored, processed, analyzed using traditional ways. Big Data is used when data has high volume, requires high velocity/speed to get, has huge variety that requires high processing, must be reduced to a certain value/pre-processed, veracity/data has uncertainty, meaning high processing (ex. Twitter data).
-
-<![if !supportLists]>3. <![endif]>Big Data challenges -> solutions solved by Hadoop
-
-<![if !supportLists]>a. <![endif]>Single central storage -> Distributed storage
-
-<![if !supportLists]>b. <![endif]>Serial processing -> Parallel processing
-
-<![if !supportLists]>c. <![endif]>Lack of ability to process unstructured data (or mix of data) -> ability to do so
-
-<![if !supportLists]>4. <![endif]>Hadoop: framework that manages big data storage in a distributed way and processes it parallelly. Components:
+2.  **Big Data:** Massive amount of data that cannot be stored, processed, analyzed using traditional ways. Big Data is used when data has high volume, requires high velocity/speed to get, has huge variety that requires high processing, must be reduced to a certain value/pre-processed, veracity/data has uncertainty, meaning high processing (ex. Twitter data).
+3. Big Data challenges -> solutions solved by Hadoop:
+	- Single central storage -> Distributed storage.
+	- Serial processing -> Parallel processing.
+	- Lack of ability to process unstructured data (or mix of data) -> ability to do so.
+4. **Hadoop:** Framework that manages big data storage in a distributed way and processes it parallelly. Components:
 
 <![if !supportLists]>a. <![endif]>Hadoop storage unit (Hadoop HDFS): Specially designed for storing huge datasets in commodity hardware.
 
@@ -64,5 +59,5 @@ Description automatically generated](file:////Users/ts-celine.yuwono/Library/Gro
 
 <![if !supportLists]>d. <![endif]>Detecting information through monitoring and generate many information from processing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA4MDYxMzgxXX0=
+eyJoaXN0b3J5IjpbNDU2OTg3NDI2XX0=
 -->
