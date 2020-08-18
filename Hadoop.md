@@ -1,6 +1,7 @@
 ## Hadoop
 
-#### Source URL: [https://www.youtube.com/watch?v=9s-vSeWej1U](https://www.youtube.com/watch?v=9s-vSeWej1U)
+
+### Source URL: [https://www.youtube.com/watch?v=9s-vSeWej1U](https://www.youtube.com/watch?v=9s-vSeWej1U)
 ### What is Hadoop?
 
 1. Google Labs team developed an algorithm, MapReduce that allowed for large data calculations to be chopped up into smaller chunks and mapped to many computers. When the calculation is done brought back together to produce resulting data sets.
@@ -34,5 +35,5 @@
 
 5. This flexibility is the reason there’s so many practices and deployment type. But the tools for data management and analysis is beginning to write map reduce programs and pre-packaged schemas on lead to easier use Hadoop (code-less access to Hadoop).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMTU1MjE2NywxODc4ODQxMzg3XX0=
+eyJoaXN0b3J5IjpbMjA5MTQ5MzI0LDE4Nzg4NDEzODddfQ==
 -->
