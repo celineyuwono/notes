@@ -40,6 +40,11 @@
 	1. Pod claims storage via PVC.
 	2. PVC requests SC.
 	3. SC will provision or create PV that meets the needs of the claim using provisioner from actual storage backend.
+
+### Comparison with Docker Volumes
+- When a container writes to its file system it gets replicated on the Host File System directory and vice versa.
+
+![What is Docker Volume?](https://i.ibb.co/54cp64X/Screen-Shot-2020-08-18-at-10-42-14.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzI2NzE3Ml19
+eyJoaXN0b3J5IjpbLTUzMDYzNDE5N119
 -->
