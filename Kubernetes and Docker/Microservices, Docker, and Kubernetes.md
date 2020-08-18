@@ -27,12 +27,12 @@
 
 ### Container Orchestration (Amazon ECS, Kubernetes, Docker Swarm)
 - Kubernetes: Automate deployment, scaling, and management of containers.
-- Vocab:
-	- Node: Instance of computer that is running Kubernetes. Kubelet is application that is running that communicates with the master node. Node run pods. A pod contains 1 or more containers.
-	- Service handles requests coming inside Kubernetes cluster from 1 node to another or from outside wanting to hit specific microservices. Usually a load balancer, how requests should be handled within cluster.
-	- Deployment: Define desired state. “I want three copies of this container!” Kubernetes will do it. Deployment file uses yaml or json, contains declared desire state.
+- Vocabulary:
+	- **Node:** Instance of computer that is running Kubernetes. Kubelet is application that is running that communicates with the master node. Node run pods. A pod contains 1 or more containers.
+	- **Service:** Handles requests coming inside Kubernetes cluster from 1 node to another or from outside wanting to hit specific microservices. Usually a load balancer, how requests should be handled within cluster.
+	- **Deployment:** Define desired state. “I want three copies of this container!” Kubernetes will do it. Deployment file uses yaml or json, contains declared desire state.
 
 ![A quick recap](https://i.ibb.co/LvYmSdC/Screen-Shot-2020-08-18-at-9-31-55.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTIyODkwN119
+eyJoaXN0b3J5IjpbMzE1NjY2NzU0LDE3MjUyMjg5MDddfQ==
 -->
