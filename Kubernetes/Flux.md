@@ -11,7 +11,7 @@
 ![Simple Flux Flow](https://i.ibb.co/pZdWPkc/Screen-Shot-2020-08-25-at-9-40-55.png)
 
 ### What is GitOps
-- With GitOps, we replace commands such as `kubectl apply`, `kubectl set image`, and so on with `git push`. 
+- With GitOps, we replace commands such as `kubectl apply`, `kubectl set image`, or `helm upgrade` and so on with `git push`. 
 - For example, we push to a  Git Repo using `git push`. Flux will sync to the Git Repo and communicate with the Kubernetes API using `kubectl` commands automatically.
 - So, we don't need to run the `kubectl` commands, we only need to `git push`.
 
@@ -27,7 +27,7 @@
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTAwMDA5LC0xNTU0OTEwMTgxLC0xNz
-U5ODg0OTkyLDE3NjM3MDA4LDEwMjg4OTMwMTIsMjA5MDAzNDld
-fQ==
+eyJoaXN0b3J5IjpbLTE1NzUyOTI4MTIsLTE1NTQ5MTAxODEsLT
+E3NTk4ODQ5OTIsMTc2MzcwMDgsMTAyODg5MzAxMiwyMDkwMDM0
+OV19
 -->
