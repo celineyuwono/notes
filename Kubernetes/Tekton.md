@@ -4,15 +4,15 @@
 
 Currently, Tekton has four different kinds of PipelineResources: Git, Image, Storage and Cluster. These can be used to reference a code repository, a container image to either be built or loaded, to access stored files and to manage another Kubernetes cluster. The latter allows Tekton Pipelines to not only manipulate the Kubernetes cluster it was deployed to, but any cluster it gets handed as a resource.
 
-### Cloud Native
+### What does Cloud Native mean?
 - Opensource.
 - Microservice in containers.
 - **Containers** that are dynamically orchestrated.
-- Easily scale-in/out
+- Easily scale-in/out.
 
 ### CI/CD
 - Code is **built, tested, deployed.**
-- CI determines what code can be merged to what branch.
+- Determines what code can be merged to what branch.
 - Get my code to source to production as quickly and securely as possible!
 ![CI/CD Example](https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png)
 
@@ -35,6 +35,6 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 ![Tekton Components](https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTEyMjc0MiwxMzE1Mjk2NzE4LDMwNT
-U3NTY0LC03NzMwOTI5MTddfQ==
+eyJoaXN0b3J5IjpbLTEyNzI2OTUwNjEsMTMxNTI5NjcxOCwzMD
+U1NzU2NCwtNzczMDkyOTE3XX0=
 -->
