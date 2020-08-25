@@ -15,11 +15,11 @@
 - A **Container Registry** where your CI system pushes immutable images. Flux *monitors* the registry for new images and updates your Git Repo.
 - A **CD Process** that:
 	- Watches changes in the **Git Repo** and applies them to the cluster. Flux does this in 5 minute intervals, but it can be set.
-	- Watches the **Container Registry** for new image releases. Then, updates workload definitions in Git according to predefined upgrade policies. This is not an automatic pro
-	-  Flux does this by taking the image secret of the K8s cluster and use it to connect to the Container Registry. It caches images and tags (metadata; to see the version of the image, etc.) and saves it to **Memcached**.
+	- Watches the **Container Registry** for new image releases. Flux does this by taking the image secret of the K8s cluster and use it to connect to the Container Registry. It caches images and tags (metadata; to see the version of the image, etc.) and saves it to **Memcached**.
+	- Lastly, Flux updates the YAML configurations in Git according to predefined upgrade policies. This is not an automatic process, the dev needs to run a Flux command or make an API call.
 ![Full Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Njk3NDI1NSwyMDkwMDM0OV19
+eyJoaXN0b3J5IjpbMTAyODg5MzAxMiwyMDkwMDM0OV19
 -->
