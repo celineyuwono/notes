@@ -48,7 +48,13 @@
 `kind: PipelineRun`
 
 <img alt="PipelineRun" src="https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png" width="600px" height="310px" />
+
+`kind: PipelineResource`
+
 <img alt="PipelineResource" src="https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png" width="600px" height="310px" />
+
+CI/CD Pipeline
+
 <img alt="CI/CD Pipeline" src="https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png" width="600px" height="310px" />
 
 ### High-level Flow of Tekton
@@ -62,7 +68,7 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 <img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="315px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE5OTgxODk0LC0xODU0MzgwNTcwLDk5NT
+eyJoaXN0b3J5IjpbNDQ2NDU2MTAwLC0xODU0MzgwNTcwLDk5NT
 EyNzA2OSwtNjAzMTYxNDcxLC0xMjU3MDAxODc5LC0xMDM3Mjc5
 NzY4LC0xNjI2MjYxMzY3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOS
 wtMTI3MjY5NTA2MSwxMzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMw
