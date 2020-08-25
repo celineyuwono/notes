@@ -36,6 +36,7 @@
 ![TaskRun](https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png)
 ![PipelineRun](https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png)
 	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
+
 ![PipelineResource](https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png)
 ![CI/CD Pipeline](https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png)
 
@@ -50,7 +51,7 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2MjgwNzg3LC02MDMxNjE0NzEsLTEyNT
+eyJoaXN0b3J5IjpbMjEwOTk0ODgxLC02MDMxNjE0NzEsLTEyNT
 cwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNjcsMTQ4Mjk5
 OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMTUyOTY3MT
 gsMzA1NTc1NjQsLTc3MzA5MjkxN119
