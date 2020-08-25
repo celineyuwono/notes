@@ -24,6 +24,7 @@
 - Implemented using Kubernetes Custom Resource Definition (CRD).
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
 - **Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
+
 ![Steps](https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png)
 - 5 New Custom Resources (CRD) provided by Tekton:
 ![Tekton Components](https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png)
@@ -49,8 +50,8 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMT
-AzNzI3OTc2OCwtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYw
-OTM2MTksLTEyNzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NC
-wtNzczMDkyOTE3XX0=
+eyJoaXN0b3J5IjpbOTM2MjgwNzg3LC02MDMxNjE0NzEsLTEyNT
+cwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNjcsMTQ4Mjk5
+OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMTUyOTY3MT
+gsMzA1NTc1NjQsLTc3MzA5MjkxN119
 -->
