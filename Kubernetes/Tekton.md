@@ -12,7 +12,7 @@
 - Code is **built, tested, deployed.**
 - Determines what code can be merged to what branch.
 - Get my code to source to production as quickly and securely as possible.
-<img alt="CI/CD Example" src="https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png=400x150" width="400px" height="200px" />
+<img alt="CI/CD Example" src="https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png" width="600px" height="230px" />
 
 ### Tekton
 - Tekton is a shared set of open source Cloud Native building blocks for CI/CD system. Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
@@ -24,11 +24,12 @@
 - Implemented using Kubernetes Custom Resource Definition (CRD).
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
 - **Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
+<img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="200px" />
 
-![Steps](https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png=600x200)
 - 5 New Custom Resources (CRD) provided by Tekton:
-![Tekton Components](https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png=600x180)
+<img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="200px" />
 	- **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
+<img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="200px" />
 ![Screen-Shot-2020-08-25-at-16-55-12](https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png=600x220)
 	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
 ![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png=600x200)
@@ -51,8 +52,8 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png=600x220)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NTAzNzU0OCwtNjAzMTYxNDcxLC0xMj
-U3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5
-OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2Nz
-E4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
+eyJoaXN0b3J5IjpbLTE4MjA3MDQwMjMsLTYwMzE2MTQ3MSwtMT
+I1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2MTM2NywxNDgy
+OTk5MDI1LC04NjYwOTM2MTksLTEyNzI2OTUwNjEsMTMxNTI5Nj
+cxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX0=
 -->
