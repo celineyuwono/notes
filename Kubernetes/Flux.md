@@ -3,7 +3,9 @@
 
 ### What does Flux do?
 - Continuous Delivery (CD) Tool.
-- Uses 2 things: **(1) Configuration** (from **Git Repo**) and **(2) Container Images** (from **Container Registry**) to *automate deployment* to **Kubernetes**.
+- Goal: To *automate deployment* to **Kubernetes**.
+- Uses 2 things: **(1) YAML Configuration** (from Git Repo) and **(2) Container Images** (from Container Registry) to 
+- Needs a **git ssh key** to access your Git Repo.
 
 ### GitOps Requirements
 - A **Git Repo** that defines cluster desired state. Flux *synchronizes* the repo with your Kubernetes cluster.
@@ -19,5 +21,5 @@
 
 ![Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDE5MjM5MCwyMDkwMDM0OV19
+eyJoaXN0b3J5IjpbMTU3ODg2NDE0NCwyMDkwMDM0OV19
 -->
