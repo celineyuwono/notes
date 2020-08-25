@@ -27,13 +27,14 @@
 <img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="200px" />
 
 - 5 New Custom Resources (CRD) provided by Tekton:
-<img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="200px" />
+<img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="180px" />
 	- **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
-<img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="200px" />
-![Screen-Shot-2020-08-25-at-16-55-12](https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png=600x220)
+<img alt="Task Input and Outputs" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="180px" />
 	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
-![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png=600x200)
+	<img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="180px" />
 	- **TaskRun** and **PipelineRun**: Invokes **Tasks** and **Pipelines**.
+	<img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="200px" />
+	<img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="200px" />
 ![TaskRun](https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png=600x220)
 ![PipelineRun](https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png=600x220)
 	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
@@ -52,8 +53,8 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png=600x220)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjA3MDQwMjMsLTYwMzE2MTQ3MSwtMT
-I1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2MTM2NywxNDgy
-OTk5MDI1LC04NjYwOTM2MTksLTEyNzI2OTUwNjEsMTMxNTI5Nj
-cxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX0=
+eyJoaXN0b3J5IjpbLTQ5MDYzMTM1NCwtNjAzMTYxNDcxLC0xMj
+U3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5
+OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2Nz
+E4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
 -->
