@@ -35,11 +35,11 @@
 ### Example Images & YAML Files
 `kind: Task`
 
-<img alt="Task Input and Outputs" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="300px" />
+<img alt="Task" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="300px" />
 
 `kind: Pipeline`
 
-<img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="280px" />
+<img alt="Pipeline" src="https://i.ibb.co/JpPgkhP/Screen-Shot-2020-08-25-at-17-49-28.png" width="600px" height="280px" />
 
 `kind: TaskRun`
 
@@ -53,14 +53,9 @@
 
 <img alt="PipelineResource" src="https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png" width="600px" height="310px" />
 
-CI/CD Pipeline
-
+### CI/CD Task Flow
+<img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="280px" />
 <img alt="CI/CD Pipeline" src="https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png" width="600px" height="310px" />
-
-### High-level Flow of Tekton
-1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
-2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
-<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="320px" />
 
 ### Example Task/Pipeline Flow
 1. **Task 1: Build Task** -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry.
@@ -68,9 +63,9 @@ CI/CD Pipeline
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 <img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="315px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2NDU2MTAwLC0xODU0MzgwNTcwLDk5NT
-EyNzA2OSwtNjAzMTYxNDcxLC0xMjU3MDAxODc5LC0xMDM3Mjc5
-NzY4LC0xNjI2MjYxMzY3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOS
-wtMTI3MjY5NTA2MSwxMzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMw
-OTI5MTddfQ==
+eyJoaXN0b3J5IjpbMTg4MzAwNjQ0OSwtMTg1NDM4MDU3MCw5OT
+UxMjcwNjksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3
+OTc2OCwtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MT
+ksLTEyNzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzcz
+MDkyOTE3XX0=
 -->
