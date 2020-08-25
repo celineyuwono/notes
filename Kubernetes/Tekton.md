@@ -12,7 +12,7 @@
 - Code is **built, tested, deployed.**
 - Determines what code can be merged to what branch.
 - Get my code to source to production as quickly and securely as possible.
-![CI/CD Example](https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png=400x200)
+![CI/CD Example](https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png=400x150)
 
 ### Tekton
 - Tekton is a shared set of open source Cloud Native building blocks for CI/CD system. Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
@@ -51,8 +51,8 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png=600x220)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTg4NTI1NjAsLTYwMzE2MTQ3MSwtMT
-I1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2MTM2NywxNDgy
-OTk5MDI1LC04NjYwOTM2MTksLTEyNzI2OTUwNjEsMTMxNTI5Nj
-cxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX0=
+eyJoaXN0b3J5IjpbMTQxMzg5NjU5OCwtNjAzMTYxNDcxLC0xMj
+U3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5
+OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2Nz
+E4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
 -->
