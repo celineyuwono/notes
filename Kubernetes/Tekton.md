@@ -1,5 +1,7 @@
 ## Tekton
 
+### Source: [https://www.youtube.com/watch?v=TQJ_pdTxZr0](https://www.youtube.com/watch?v=TQJ_pdTxZr0) [https://www.inovex.de/blog/spinnaker-vs-argo-cd-vs-tekton-vs-jenkins-x/](https://www.inovex.de/blog/spinnaker-vs-argo-cd-vs-tekton-vs-jenkins-x/)
+
 ### Tekton Pipeline
 
 Currently, Tekton has four different kinds of PipelineResources: Git, Image, Storage and Cluster. These can be used to reference a code repository, a container image to either be built or loaded, to access stored files and to manage another Kubernetes cluster. The latter allows Tekton Pipelines to not only manipulate the Kubernetes cluster it was deployed to, but any cluster it gets handed as a resource.
@@ -39,7 +41,7 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 ![](https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMj
-cyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5Mjkx
-N119
+eyJoaXN0b3J5IjpbLTE2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtOD
+Y2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1
+NjQsLTc3MzA5MjkxN119
 -->
