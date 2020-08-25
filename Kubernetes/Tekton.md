@@ -39,9 +39,13 @@
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 ![](https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png)
+
+### Example Task/Pipeline Flow
+1. Task 1: Buil
+2. Task 2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzM2MjgwMSwtMTAzNzI3OTc2OCwtMT
-YyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEyNzI2
-OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX
-0=
+eyJoaXN0b3J5IjpbMjM3ODM1NDA4LC0xMDM3Mjc5NzY4LC0xNj
+I2MjYxMzY3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5
+NTA2MSwxMzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ
+==
 -->
