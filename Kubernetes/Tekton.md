@@ -41,11 +41,13 @@
 ![](https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png)
 
 ### Example Task/Pipeline Flow
-1. Task 1: Buil
-2. Task 2
+1. Task 1: Build Task -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry.
+![Build Task](https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png)
+2. Task 2: Deployment Task -> 
+![Deployment Task]((https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3ODM1NDA4LC0xMDM3Mjc5NzY4LC0xNj
-I2MjYxMzY3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5
-NTA2MSwxMzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ
-==
+eyJoaXN0b3J5IjpbMTI1MjM2MDkxOSwtMTAzNzI3OTc2OCwtMT
+YyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEyNzI2
+OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX
+0=
 -->
