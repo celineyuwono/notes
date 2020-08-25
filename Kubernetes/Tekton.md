@@ -46,13 +46,12 @@
 
 ### Example Task/Pipeline Flow
 1. **Task 1: Build Task** -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry.
-<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="200px" />
-![Build Task](https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png=600x220)
-3. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
-![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png=600x220)
+<img alt="Build Task" src="https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png" width="600px" height="200px" />
+2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
+<img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="200px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDUxNTg5NiwtNjAzMTYxNDcxLC0xMj
-U3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5
-OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2Nz
-E4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
+eyJoaXN0b3J5IjpbLTQyNjY4MzI2LC02MDMxNjE0NzEsLTEyNT
+cwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNjcsMTQ4Mjk5
+OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMTUyOTY3MT
+gsMzA1NTc1NjQsLTc3MzA5MjkxN119
 -->
