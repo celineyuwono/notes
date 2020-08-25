@@ -7,12 +7,11 @@
 - Uses 2 things: **(1) YAML Configuration** (from Git Repo) and **(2) Container Images** (from Container Registry).
 - Needs a **git ssh key** to access your Git Repo (for write access), saved in K8s secret.
 - Can be installed using Helm. Commands: 
-```
-# Install Helm first -> [https://helm.sh/docs/intro/install/
-helm repo add fluxcd <Repo name>
-helm repo update
-```
-`$
+	```
+	# Install Helm first -> https://helm.sh/docs/intro/install/
+	helm repo add fluxcd <Helm Chart of Flux Repo Name>
+	helm repo update
+	```
 - Supports Kustomize. If Helm doesn't support a certain customization, you can patch with Kustomize after running Helm template.
 ![Simple Flux Flow](https://i.ibb.co/pZdWPkc/Screen-Shot-2020-08-25-at-9-40-55.png)
 
@@ -31,7 +30,7 @@ helm repo update
 	- Lastly, Flux updates the YAML configurations in Git according to predefined upgrade policies. This is not an automatic process, you need to run a Flux command or make an API call to do this.
 ![Full Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NjA2ODM0MywtMTk5MTEwNzYzMCwtMT
-U1NDkxMDE4MSwtMTc1OTg4NDk5MiwxNzYzNzAwOCwxMDI4ODkz
-MDEyLDIwOTAwMzQ5XX0=
+eyJoaXN0b3J5IjpbLTE0MDIxODkyNDIsLTE5OTExMDc2MzAsLT
+E1NTQ5MTAxODEsLTE3NTk4ODQ5OTIsMTc2MzcwMDgsMTAyODg5
+MzAxMiwyMDkwMDM0OV19
 -->
