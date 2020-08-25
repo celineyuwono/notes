@@ -43,11 +43,11 @@
 ### Example Task/Pipeline Flow
 1. Task 1: Build Task -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry.
 ![Build Task](https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png)
-2. Task 2: Deployment Task -> 
-![Deployment Task]((https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png)
+2. Task 2: Deployment Task -> Takes the deployment manifest and create the deployment. 
+![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MjM2MDkxOSwtMTAzNzI3OTc2OCwtMT
-YyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEyNzI2
-OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX
-0=
+eyJoaXN0b3J5IjpbLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLT
+E2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcy
+Njk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN1
+19
 -->
