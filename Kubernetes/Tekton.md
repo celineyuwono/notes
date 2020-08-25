@@ -39,15 +39,13 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 	![PipelineResource](https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png)
 	![CI/CD Pipeline](https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png)
 
-### Tekton Components
-
-
 ### Flow
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 ![](https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg5NDY2MTMsLTEwMzcyNzk3NjgsLTE2Mj
-YyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1
-MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN119
+eyJoaXN0b3J5IjpbLTE4NzYwNjk2NTksLTEwMzcyNzk3NjgsLT
+E2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcy
+Njk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN1
+19
 -->
