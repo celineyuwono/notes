@@ -32,9 +32,11 @@
 	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
 ![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png)
 	- **PipelineRun** and **TaskRun**: Invokes **Pipelines** and **Tasks**.
+![Task](https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png)
+
 	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
 	![PipelineResource](https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png)
-	![CI/CD Pipeline](https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png)
+![CI/CD Pipeline](https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png)
 
 ### Flow
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
@@ -47,7 +49,7 @@
 2. Task 2: Deployment Task -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NjYxNzc3NywtMTI1NzAwMTg3OSwtMT
+eyJoaXN0b3J5IjpbLTkxNTgxNzEzNSwtMTI1NzAwMTg3OSwtMT
 AzNzI3OTc2OCwtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYw
 OTM2MTksLTEyNzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NC
 wtNzczMDkyOTE3XX0=
