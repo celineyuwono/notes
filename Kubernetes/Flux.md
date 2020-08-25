@@ -29,8 +29,11 @@
 	- Watches the **Container Registry** for new image releases. Flux does this by taking the image secret of the K8s cluster and use it to connect to the Container Registry. It caches images and tags (metadata; to see the version of the image, etc.) and saves it to **Memcached**.
 	- Lastly, Flux updates the YAML configurations in Git according to predefined upgrade policies. This is not an automatic process, you need to run a Flux command or make an API call to do this.
 ![Full Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
+
+### Summary
+![Simplified Flow](https://i.ibb.co/JnxSW9W/Screen-Shot-2020-08-25-at-13-10-40.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDIxODkyNDIsLTE5OTExMDc2MzAsLT
-E1NTQ5MTAxODEsLTE3NTk4ODQ5OTIsMTc2MzcwMDgsMTAyODg5
-MzAxMiwyMDkwMDM0OV19
+eyJoaXN0b3J5IjpbLTU1NDM1NjUxMiwtMTQwMjE4OTI0MiwtMT
+k5MTEwNzYzMCwtMTU1NDkxMDE4MSwtMTc1OTg4NDk5MiwxNzYz
+NzAwOCwxMDI4ODkzMDEyLDIwOTAwMzQ5XX0=
 -->
