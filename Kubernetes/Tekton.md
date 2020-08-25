@@ -28,13 +28,13 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
 - Step: Kubernetes Container Spec, specify image and everything you need to run it (ex. ENV var, volumes used).
 - Types of Tekton CRD:
-	- **Task:** Combine `Steps`, run sequentially on same K8s node.
-	- **Pipelines:** Combine `Tasks` . You can define order of tasks, run sequentially or concurrently, or create own task graph. Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
+	- **Task:** Made up of `Steps`, run sequentially on same K8s node.
+	- **Pipelines:** Made up of `Tasks` . You can define order of tasks, run sequentially or concurrently, or create own task graph. Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
 ![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png)
-	- **Pipeline Run** and **Task Run**: Run Pipelines and Tasks multiple times. Needs runtime information: **Git Repo** and **Container Registry**.
-	- **Pipeline Resources:** d
+	- **Pipeline Run** and **Task Run**: Invoke Pipelines and Tasks (because they usually need to be invoked multiple times).
+	- **Pipeline Resources:** Provide runtime information like **Git Repo** and **Container Registry**.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODMyNzk1NjMsMzA1NTc1NjQsLTc3Mz
-A5MjkxN119
+eyJoaXN0b3J5IjpbLTEwMzg1NjU5NSwzMDU1NzU2NCwtNzczMD
+kyOTE3XX0=
 -->
