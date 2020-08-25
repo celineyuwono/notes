@@ -16,6 +16,7 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 - Code is **built, tested, deployed.**
 - CI determines what code can be merged to what branch.
 - Get my code to source to production as quickly and securely as possible!
+![CI/CD Example](https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png)
 
 ### Tekton
 - Tekton is a shared set of open source Cloud Native building blocks for CI/CD system. Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
@@ -29,10 +30,11 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 - Types of Tekton CRD:
 	- Task: Combine `steps`, run sequentially on same K8s node.
 	- Pipeline: Combine `tasks` . You can define order of tasks, run sequentially or concurrently, or create own task graph. Tasks can run in multiple nodes. Can pass input from one task to next task.
+	![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png)
 	- 
 	- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzQzMzA5MSwzMDU1NzU2NCwtNzczMD
+eyJoaXN0b3J5IjpbLTE3NzY0MzQ3NCwzMDU1NzU2NCwtNzczMD
 kyOTE3XX0=
 -->
