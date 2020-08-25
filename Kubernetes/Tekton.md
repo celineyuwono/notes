@@ -29,7 +29,7 @@
 - 5 New Custom Resources (CRD) provided by Tekton:
 <img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="280px" />
 
-<li><b>Task: </b>Made up of <b>Steps</b>, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).</li>
+	<li><b>Task: </b>Made up of <b>Steps</b>, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).</li>
 	
 <img alt="Task Input and Outputs" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="300px" />
 	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
@@ -52,8 +52,8 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 <img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="315px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MTg2NDc1Myw5OTUxMjcwNjksLTYwMz
-E2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2
-MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEyNzI2OTUwNj
-EsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX0=
+eyJoaXN0b3J5IjpbMjY3NjgwMDksOTk1MTI3MDY5LC02MDMxNj
+E0NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEz
+NjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLD
+EzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN119
 -->
