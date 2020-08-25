@@ -31,13 +31,12 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
 ![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png)
 	- **Pipeline Run** and **Task Run**: Invoke **Pipelines** and **Tasks** (because they usually need to be invoked multiple times).
-	- **Pipeline Resources:** Share resources between different **Tasks** and *provides runtime information* like **Git Repo** and **Container Registry**. Using runtime information, we can run pipelines against different stages (ex: 
+	- **Pipeline Resources:** Share resources between different **Tasks** and *provides runtime information* like **Git Repo** and **Container Registry**. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure.
 ![Tekton Components](https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png)
 
-### Pipeline Resources
-- By decoupling runtime information, we can:
-	- Run pipeline against different stages: 
+### Flow
+1. User interact with Kubernetes to create Task or Pipelines, which are 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDQzNjM3MywtMTI3MjY5NTA2MSwxMz
+eyJoaXN0b3J5IjpbLTIwMzQ4NzI0NSwtMTI3MjY5NTA2MSwxMz
 E1Mjk2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
 -->
