@@ -28,9 +28,11 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 - Step: Kubernetes Container Spec, specify image and everything you need to run it (ex. ENV var, volumes used).
 - Types of Tekton CRD:
 	- Task: Combine `steps`, run sequentially on same K8s node.
-	- Pipeline: Combine `tasks` and can define order of tasks, run sequentially or concurrently. Tasks can run in multiple nodes. Can pass input from one task to next task.
+	- Pipeline: Combine `tasks` . You can define order of tasks, run sequentially or concurrently, or create own task graph. Tasks can run in multiple nodes. Can pass input from one task to next task.
+	- 
 	- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1NTc1NjQsLTc3MzA5MjkxN119
+eyJoaXN0b3J5IjpbLTMxNzQzMzA5MSwzMDU1NzU2NCwtNzczMD
+kyOTE3XX0=
 -->
