@@ -34,26 +34,24 @@
 	<img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="180px" />
 	- **TaskRun** and **PipelineRun**: Invokes **Tasks** and **Pipelines**.
 	<img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="200px" />
-	<img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="200px" />
-![TaskRun](https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png=600x220)
-![PipelineRun](https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png=600x220)
+	<img alt="PipelineRun" src="https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png" width="600px" height="200px" />
 	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
-
-![PipelineResource](https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png=600x220)
-![CI/CD Pipeline](https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png=600x220)
+	<img alt="PipelineResource" src="https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png" width="600px" height="200px" />
+	<img alt="CI/CD Pipeline" src="https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png" width="600px" height="200px" />
 
 ### High-level Flow of Tekton
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
-![](https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png=600x220)
+<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="200px" />
 
 ### Example Task/Pipeline Flow
 1. **Task 1: Build Task** -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry.
+<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="200px" />
 ![Build Task](https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png=600x220)
-2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
+3. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png=600x220)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDYzMTM1NCwtNjAzMTYxNDcxLC0xMj
+eyJoaXN0b3J5IjpbLTgxMDUxNTg5NiwtNjAzMTYxNDcxLC0xMj
 U3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5
 OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2Nz
 E4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
