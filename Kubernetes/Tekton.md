@@ -12,7 +12,7 @@
 - Code is **built, tested, deployed.**
 - Determines what code can be merged to what branch.
 - Get my code to source to production as quickly and securely as possible.
-<img alt="CI/CD Example" src="https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png" width="600px" height="230px" />
+<img alt="CI/CD Example" src="https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png" width="600px" height="330px" />
 
 ### Tekton
 - Tekton is a shared set of open source Cloud Native building blocks for CI/CD system. Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
@@ -24,34 +24,34 @@
 - Implemented using Kubernetes Custom Resource Definition (CRD).
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
 - **Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
-<img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="200px" />
+<img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="300px" />
 
 - 5 New Custom Resources (CRD) provided by Tekton:
-<img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="180px" />
+<img alt="Tekton Components" src="https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png" width="600px" height="280px" />
 	- **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
-<img alt="Task Input and Outputs" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="180px" />
+<img alt="Task Input and Outputs" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="280px" />
 	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
-	<img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="180px" />
+	<img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="280px" />
 	- **TaskRun** and **PipelineRun**: Invokes **Tasks** and **Pipelines**.
-	<img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="200px" />
-	<img alt="PipelineRun" src="https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png" width="600px" height="200px" />
+	<img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="300px" />
+	<img alt="PipelineRun" src="https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png" width="600px" height="300px" />
 	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
-	<img alt="PipelineResource" src="https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png" width="600px" height="200px" />
-	<img alt="CI/CD Pipeline" src="https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png" width="600px" height="200px" />
+	<img alt="PipelineResource" src="https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png" width="600px" height="300px" />
+	<img alt="CI/CD Pipeline" src="https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png" width="600px" height="300px" />
 
 ### High-level Flow of Tekton
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
-<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="200px" />
+<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="300px" />
 
 ### Example Task/Pipeline Flow
 1. **Task 1: Build Task** -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry.
-<img alt="Build Task" src="https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png" width="600px" height="200px" />
+<img alt="Build Task" src="https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png" width="600px" height="300px" />
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
-<img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="200px" />
+<img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="300px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjY4MzI2LC02MDMxNjE0NzEsLTEyNT
-cwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNjcsMTQ4Mjk5
-OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMTUyOTY3MT
-gsMzA1NTc1NjQsLTc3MzA5MjkxN119
+eyJoaXN0b3J5IjpbMTAwMjc4NDk5MCwtNjAzMTYxNDcxLC0xMj
+U3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5
+OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2Nz
+E4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
 -->
