@@ -15,7 +15,9 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 ### CI/CD
 - Code is **built, tested, deployed.**
 - CI determines what code can be merged to what branch.
+- Get my code to source to production as quickly and securely as possible!
+- Tekton is a 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgyODAxNDY1LC0xNTc1NDY1ODc1LC00NT
-MxOTkwMDZdfQ==
+eyJoaXN0b3J5IjpbLTg2NzEzOTYzLDY4MjgwMTQ2NSwtMTU3NT
+Q2NTg3NSwtNDUzMTk5MDA2XX0=
 -->
