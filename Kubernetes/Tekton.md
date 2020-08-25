@@ -33,9 +33,21 @@
 	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
 
 ### Example YAML Files
+
+    kind: task
+
 <img alt="Task Input and Outputs" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="300px" />
+
+    kind: Pipeline
+
 <img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="280px" />
+
+     kind: TaskRun
+
 <img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="330px" />
+
+
+kind: p
 	<img alt="PipelineRun" src="https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png" width="600px" height="310px" />
 	<img alt="PipelineResource" src="https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png" width="600px" height="310px" />
 	<img alt="CI/CD Pipeline" src="https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png" width="600px" height="310px" />
@@ -51,7 +63,7 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 <img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="315px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxOTg2ODc5MiwtMTg1NDM4MDU3MCw5OT
+eyJoaXN0b3J5IjpbLTMyNzYyNDU3NSwtMTg1NDM4MDU3MCw5OT
 UxMjcwNjksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3
 OTc2OCwtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MT
 ksLTEyNzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzcz
