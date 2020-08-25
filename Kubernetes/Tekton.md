@@ -31,10 +31,10 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 	- **Task:** Combine `Steps`, run sequentially on same K8s node.
 	- **Pipelines:** Combine `Tasks` . You can define order of tasks, run sequentially or concurrently, or create own task graph. Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
 ![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png)
-	- Pipeline Run and Task Run: Run Pipelines and Tasks multiple times.
-	- 
+	- **Pipeline Run** and **Task Run**: Run Pipelines and Tasks multiple times. Needs runtime information: **Git Repo** and **Container Registry**.
+	- **Pipeline Resources:** d
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTc1MzAzNiwzMDU1NzU2NCwtNzczMD
-kyOTE3XX0=
+eyJoaXN0b3J5IjpbLTEzODMyNzk1NjMsMzA1NTc1NjQsLTc3Mz
+A5MjkxN119
 -->
