@@ -11,7 +11,11 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 - Microservice in containers.
 - **Containers** that are dynamically orchestrated.
 - Easily scale-in/out
+
+### CI/CD
+- Code is **built, tested, deployed.**
+- CI determines what code can be merged to what branch.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTUzODkyNDUsLTE1NzU0NjU4NzUsLT
-Q1MzE5OTAwNl19
+eyJoaXN0b3J5IjpbNjgyODAxNDY1LC0xNTc1NDY1ODc1LC00NT
+MxOTkwMDZdfQ==
 -->
