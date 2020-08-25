@@ -1,8 +1,9 @@
 ## Flux
-Source: [https://docs.fluxcd.io/en/1.20.1/faq/](https://docs.fluxcd.io/en/1.20.1/faq/)
-### What does it do?
-- Automates Deployment.
-- Uses **Configuration** (from **Git Repo**) and **Container Images** (from **Container Registry**) to automate deployment to **Kubernetes**.
+### Source: [https://docs.fluxcd.io/en/1.20.1/faq/](https://docs.fluxcd.io/en/1.20.1/faq/) [https://www.youtube.com/watch?v=u8usjpl3jWM](https://www.youtube.com/watch?v=u8usjpl3jWM)
+
+### What does Flux do?
+- Continuous Delivery (CD) Tool.
+- Uses 2 things: **(1) Configuration** (from **Git Repo**) and **(2) Container Images** (from **Container Registry**) to *automate deployment* to **Kubernetes**.
 
 ### GitOps Requirements
 - A **Git Repo** that defines cluster desired state. Flux *synchronizes* the repo with your Kubernetes cluster.
@@ -18,5 +19,5 @@ Source: [https://docs.fluxcd.io/en/1.20.1/faq/](https://docs.fluxcd.io/en/1.20.1
 
 ![Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMzQwMDk4OSwyMDkwMDM0OV19
+eyJoaXN0b3J5IjpbLTQ4MDE5MjM5MCwyMDkwMDM0OV19
 -->
