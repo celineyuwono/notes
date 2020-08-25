@@ -25,11 +25,12 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 - Cloud native components for defining CI/CD pipelines.
 - Implemented using Kubernetes Custom Resource Definition (CRD).
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
-- Step: Kubernetes Container Spec, specify image and everything you need to run it (ex. ENV var, volumes )
+- Step: Kubernetes Container Spec, specify image and everything you need to run it (ex. ENV var, volumes used).
 - Types of Tekton CRD:
-	- Task: Combine `steps`, run sequentially
-	- Pipeline: Combine `tasks` and order of tasks, run sequentially or concurrently.
+	- Task: Combine `steps`, run sequentially on same K8s node.
+	- Pipeline: Combine `tasks` and can define order of tasks, run sequentially or concurrently. Tasks can run in multiple nodes. Can pass input from one task to next task.
+	- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTQ3MjAxNiwtNzczMDkyOTE3XX0=
+eyJoaXN0b3J5IjpbMzA1NTc1NjQsLTc3MzA5MjkxN119
 -->
