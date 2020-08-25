@@ -12,7 +12,7 @@
 - Code is **built, tested, deployed.**
 - Determines what code can be merged to what branch.
 - Get my code to source to production as quickly and securely as possible.
-![CI/CD Example](https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png=600x200)
+![CI/CD Example](https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png=400x200)
 
 ### Tekton
 - Tekton is a shared set of open source Cloud Native building blocks for CI/CD system. Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
@@ -24,7 +24,8 @@
 - Implemented using Kubernetes Custom Resource Definition (CRD).
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
 - **Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
-![Steps](https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png=600x200#center)
+
+![Steps](https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png=600x200)
 - 5 New Custom Resources (CRD) provided by Tekton:
 ![Tekton Components](https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png=600x180)
 	- **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
@@ -37,7 +38,7 @@
 	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
 
 ![PipelineResource](https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png=600x220)
-![CI/CD Pipeline](https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png =600x220)
+![CI/CD Pipeline](https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png=600x220)
 
 ### High-level Flow of Tekton
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
@@ -50,7 +51,7 @@
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png=600x220)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE4OTM2ODgsLTYwMzE2MTQ3MSwtMT
+eyJoaXN0b3J5IjpbLTEyOTg4NTI1NjAsLTYwMzE2MTQ3MSwtMT
 I1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2MTM2NywxNDgy
 OTk5MDI1LC04NjYwOTM2MTksLTEyNzI2OTUwNjEsMTMxNTI5Nj
 cxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX0=
