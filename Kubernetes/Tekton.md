@@ -24,10 +24,11 @@
 - Implemented using Kubernetes Custom Resource Definition (CRD).
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
 - **Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
+![Steps](https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png)
 - 5 New Custom Resources (CRD) provided by Tekton:
 ![Tekton Components](https://i.ibb.co/82JmRcM/Screen-Shot-2020-08-25-at-15-55-22.png)
 	- **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
-	![Screen-Shot-2020-08-25-at-16-55-12](https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png)
+![Screen-Shot-2020-08-25-at-16-55-12](https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png)
 	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
 ![Tekton Pipelines: example](https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png)
 	- **PipelineRun** and **TaskRun**: Invokes **Pipelines** and **Tasks**.
@@ -46,8 +47,8 @@
 2. Task 2: Deployment Task -> Takes the deployment manifest and create the deployment. 
 ![Deployment Task](https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLT
-E2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcy
-Njk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN1
-19
+eyJoaXN0b3J5IjpbMjA4NjYxNzc3NywtMTI1NzAwMTg3OSwtMT
+AzNzI3OTc2OCwtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYw
+OTM2MTksLTEyNzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NC
+wtNzczMDkyOTE3XX0=
 -->
