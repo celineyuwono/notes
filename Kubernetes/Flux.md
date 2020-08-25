@@ -6,7 +6,13 @@
 - Goal: To *automate deployment* to **Kubernetes**.
 - Uses 2 things: **(1) YAML Configuration** (from Git Repo) and **(2) Container Images** (from Container Registry).
 - Needs a **git ssh key** to access your Git Repo (for write access), saved in K8s secret.
-- Can be installed using Helm.
+- Can be installed using Helm. Commands: 
+```
+# Install Helm first -> [https://helm.sh/docs/intro/install/
+helm repo add fluxcd <Repo name>
+helm repo update
+```
+`$
 - Supports Kustomize. If Helm doesn't support a certain customization, you can patch with Kustomize after running Helm template.
 ![Simple Flux Flow](https://i.ibb.co/pZdWPkc/Screen-Shot-2020-08-25-at-9-40-55.png)
 
@@ -25,7 +31,7 @@
 	- Lastly, Flux updates the YAML configurations in Git according to predefined upgrade policies. This is not an automatic process, you need to run a Flux command or make an API call to do this.
 ![Full Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTExMDc2MzAsLTE1NTQ5MTAxODEsLT
-E3NTk4ODQ5OTIsMTc2MzcwMDgsMTAyODg5MzAxMiwyMDkwMDM0
-OV19
+eyJoaXN0b3J5IjpbMTY4NjA2ODM0MywtMTk5MTEwNzYzMCwtMT
+U1NDkxMDE4MSwtMTc1OTg4NDk5MiwxNzYzNzAwOCwxMDI4ODkz
+MDEyLDIwOTAwMzQ5XX0=
 -->
