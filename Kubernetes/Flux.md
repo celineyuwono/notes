@@ -1,5 +1,6 @@
 ## Flux
-### Source: [https://docs.fluxcd.io/en/1.20.1/faq/](https://docs.fluxcd.io/en/1.20.1/faq/) [https://www.youtube.com/watch?v=u8usjpl3jWM](https://www.youtube.com/watch?v=u8usjpl3jWM)
+### Source: [https://docs.fluxcd.io/en/1.20.1/faq/](https://docs.fluxcd.io/en/1.20.1/faq/) 
+### [https://www.youtube.com/watch?v=u8usjpl3jWM](https://www.youtube.com/watch?v=u8usjpl3jWM)
 
 ### What does Flux do?
 - Continuous Delivery (CD) Tool.
@@ -33,8 +34,8 @@
 ### Summary
 ![Simplified Flow](https://i.ibb.co/3sK2T73/Screen-Shot-2020-08-25-at-13-32-53.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjIzMTY5NywxOTIxNTMxMjEzLC01NT
-QzNTY1MTIsLTE0MDIxODkyNDIsLTE5OTExMDc2MzAsLTE1NTQ5
-MTAxODEsLTE3NTk4ODQ5OTIsMTc2MzcwMDgsMTAyODg5MzAxMi
-wyMDkwMDM0OV19
+eyJoaXN0b3J5IjpbMTA4MTEwNjI0MCwtMTIyMjMxNjk3LDE5Mj
+E1MzEyMTMsLTU1NDM1NjUxMiwtMTQwMjE4OTI0MiwtMTk5MTEw
+NzYzMCwtMTU1NDkxMDE4MSwtMTc1OTg4NDk5MiwxNzYzNzAwOC
+wxMDI4ODkzMDEyLDIwOTAwMzQ5XX0=
 -->
