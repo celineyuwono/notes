@@ -42,15 +42,15 @@
 ### High-level Flow of Tekton
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
-<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="300px" />
+<img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="320px" />
 
 ### Example Task/Pipeline Flow
 1. **Task 1: Build Task** -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry.
-<img alt="Build Task" src="https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png" width="600px" height="300px" />
+<img alt="Build Task" src="https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png" width="600px" height="315px" />
 2. **Task 2: Deployment Task** -> Takes the deployment manifest and create the deployment. 
-<img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="300px" />
+<img alt="Deployment Task" src="https://i.ibb.co/nnS7ft6/Screen-Shot-2020-08-25-at-17-03-42.png" width="600px" height="315px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MTU2MDA2MSwtNjAzMTYxNDcxLC0xMj
+eyJoaXN0b3J5IjpbMTU4MDkxOTY4NSwtNjAzMTYxNDcxLC0xMj
 U3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5
 OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2Nz
 E4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
