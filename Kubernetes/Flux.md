@@ -31,9 +31,10 @@
 ![Full Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
 
 ### Summary
-![Simplified Flow](https://i.ibb.co/JnxSW9W/Screen-Shot-2020-08-25-at-13-10-40.png)
+![Simplified Flow](https://i.ibb.co/Ch0rZ3M/Screen-Shot-2020-08-25-at-13-14-26.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NDM1NjUxMiwtMTQwMjE4OTI0MiwtMT
-k5MTEwNzYzMCwtMTU1NDkxMDE4MSwtMTc1OTg4NDk5MiwxNzYz
-NzAwOCwxMDI4ODkzMDEyLDIwOTAwMzQ5XX0=
+eyJoaXN0b3J5IjpbMTkyMTUzMTIxMywtNTU0MzU2NTEyLC0xND
+AyMTg5MjQyLC0xOTkxMTA3NjMwLC0xNTU0OTEwMTgxLC0xNzU5
+ODg0OTkyLDE3NjM3MDA4LDEwMjg4OTMwMTIsMjA5MDAzNDldfQ
+==
 -->
