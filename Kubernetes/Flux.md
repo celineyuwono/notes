@@ -1,4 +1,6 @@
 ## Flux
+### What does it do?
+Automates the process of deploying new **configuration** (from Git Repo) and **container images** (from Containe to Kubernetes.
 
 ### GitOps Requirements
 - A **Git Repo** that defines cluster desired state.
@@ -14,5 +16,5 @@
 
 ![Flux Flow](https://i.ibb.co/YhFnChf/Screen-Shot-2020-08-25-at-9-46-14.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMDMzMjA4MiwyMDkwMDM0OV19
+eyJoaXN0b3J5IjpbMjE0MDA0ODQ2MSwyMDkwMDM0OV19
 -->
