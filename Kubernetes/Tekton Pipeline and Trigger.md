@@ -19,8 +19,8 @@ Currently, Tekton has four different kinds of PipelineResources: Git, Image, Sto
 
 ### Tekton
 - Tekton is a shared set of open source Cloud Native building blocks for CI/CD system. Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
-- 
+- Started on Kubernetes Knative project. People can build images on Kubernetes, but wanted to run tests on those images and define more complex pipelines.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODAwNjc5MTIsNjgyODAxNDY1LC0xNT
-c1NDY1ODc1LC00NTMxOTkwMDZdfQ==
+eyJoaXN0b3J5IjpbMTgxMTYyNTIzMiw2ODI4MDE0NjUsLTE1Nz
+U0NjU4NzUsLTQ1MzE5OTAwNl19
 -->
