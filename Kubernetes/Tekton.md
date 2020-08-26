@@ -94,18 +94,19 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 
 ### Configuring Webhooks
 - EventListener is a resident process to receive notification and create Tekton **TaskRun** with parameters dynamically.
-- Get instant domain of EventListener with `kubectl get vs`.
-- Set the domain of EventListener in your Git Repo > Webhooks.
+- How to use:
+	- Get instant domain of EventListener with `kubectl get vs`.
+	- Set the domain of EventListener in your Git Repo > Webhooks.
 - After you configure Webhook `git push` event should be notified to EventListener which is running on your namespace.
 - TaskRun Pod is created by EventListener Pod. TaskRun Pod is created per event and after proceeded all steps the Pod status becomes "Completed".
 
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDgxNDM0MjUsLTE5MTkzNjA4ODEsMT
-I1NzM3MjUzNiwtMTIyMzUyMjM5LDE3MzMyNzY4MjEsLTE4NTQz
-ODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0NzEsLTEyNTcwMDE4Nz
-ksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwt
-ODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NT
-c1NjQsLTc3MzA5MjkxN119
+eyJoaXN0b3J5IjpbMjYyNTE4OTAyLC0xMTQ4MTQzNDI1LC0xOT
+E5MzYwODgxLDEyNTczNzI1MzYsLTEyMjM1MjIzOSwxNzMzMjc2
+ODIxLC0xODU0MzgwNTcwLDk5NTEyNzA2OSwtNjAzMTYxNDcxLC
+0xMjU3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0
+ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mj
+k2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
 -->
