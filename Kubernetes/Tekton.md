@@ -92,13 +92,17 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 - Above URL Summary: Tekton Task collect Secrets from secrets field of a ServiceAccount and uses them for checkout git repository or pull/push from/to Docker registry.
 - Add your public key in your Git Repo.
 
+### Configuring Webhooks
+- Get instant domain of EventListener with `kubectl get vs`.
+- Set the URL in your Git Repo > Webhooks.
+
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTkzNjA4ODEsMTI1NzM3MjUzNiwtMT
-IyMzUyMjM5LDE3MzMyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3
-MDY5LC02MDMxNjE0NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3Nj
-gsLTE2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0x
-MjcyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5Mj
-kxN119
+eyJoaXN0b3J5IjpbLTE1MDcxNjAwODgsLTE5MTkzNjA4ODEsMT
+I1NzM3MjUzNiwtMTIyMzUyMjM5LDE3MzMyNzY4MjEsLTE4NTQz
+ODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0NzEsLTEyNTcwMDE4Nz
+ksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwt
+ODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NT
+c1NjQsLTc3MzA5MjkxN119
 -->
