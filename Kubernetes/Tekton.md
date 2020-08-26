@@ -28,21 +28,12 @@
 <img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="300px" /></li>
 <li>5 New Custom Resources (CRD) provided by Tekton:
 <ol>
-<li>
-**Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).</li>
-**Pipeline:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). 
-<li>
-</li>
-<li>
-</li>
-<li>
-</li>
-	2. **Pipeline:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). 
-	3. **TaskRun**: Invokes **Tasks**.
-	4. **PipelineRun**: Invokes **Pipeline** 
-	5. **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, staging), pull requests, or a different infrastructure. 
-	</ol></li>
-</ul>
+<li><b>Task:</b> Made up of <b>Steps</b>, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file)</li>
+<li><b>Pipeline:</b> Made up of <b>Tasks</b>. You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). </li>
+<li><b>TaskRun</b>: Invokes <b>Tasks</b>.</li>
+<li><b>PipelineRun</b>: Invokes **Pipeline** </li>
+<li>**PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, staging), pull requests, or a different infrastructure. 
+</li></ol></li></ul>
 ### Tekton CRD Example YAML Files
 1. `kind: Task`
 
@@ -101,10 +92,10 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MjU2MjE3NiwxMjU3MzcyNTM2LC0xMj
-IzNTIyMzksMTczMzI3NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcw
-NjksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OC
-wtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEy
-NzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOT
-E3XX0=
+eyJoaXN0b3J5IjpbLTE3ODYzMzE3NzksMTI1NzM3MjUzNiwtMT
+IyMzUyMjM5LDE3MzMyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3
+MDY5LC02MDMxNjE0NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3Nj
+gsLTE2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0x
+MjcyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5Mj
+kxN119
 -->
