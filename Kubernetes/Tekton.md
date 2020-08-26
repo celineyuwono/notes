@@ -92,7 +92,8 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 - Above URL Summary: Tekton Task collect Secrets from secrets field of a ServiceAccount and uses them for checkout git repository or pull/push from/to Docker registry.
 - Add your public key in your Git Repo.
 
-### Configuring Webhooks
+### Configuring Webhooks with Triggers
+- **Triggers** is a Kubernetes CRD controller that allows you to extract information from events payloads (a "trigger") to create Kubernetes resources.
 - EventListener is a resident process to receive notification and create Tekton **TaskRun** with parameters dynamically.
 - How to use:
 	- Get instant domain of EventListener with `kubectl get vs`.
@@ -103,7 +104,7 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODcwMzYxMCwtMTE0ODE0MzQyNSwtMT
+eyJoaXN0b3J5IjpbMTg0MDAzNDM5NywtMTE0ODE0MzQyNSwtMT
 kxOTM2MDg4MSwxMjU3MzcyNTM2LC0xMjIzNTIyMzksMTczMzI3
 NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcwNjksLTYwMzE2MTQ3MS
 wtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2MTM2Nywx
