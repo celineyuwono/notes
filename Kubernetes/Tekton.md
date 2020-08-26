@@ -28,34 +28,37 @@
 
 - 5 New Custom Resources (CRD) provided by Tekton:
 	1. **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
-	2. **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
+	2. **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). 
 	3. **TaskRun**: Invokes **Tasks**.
 	4. **PipelineRun**: Invokes **Pipelines** 
-	5. **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
+	5. **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, staging), pull requests, or a different infrastructure. 
 
-### Example Images & YAML Files
-`kind: Task`
+### Tekton CRD Example YAML Files
+1. `kind: Task`
 
 <img alt="Task" src="https://i.ibb.co/qmQWLxZ/Screen-Shot-2020-08-25-at-16-55-12.png" width="600px" height="300px" />
 
-`kind: Pipeline`
+2. `kind: Pipeline`
 
 <img alt="Pipeline" src="https://i.ibb.co/JpPgkhP/Screen-Shot-2020-08-25-at-17-49-28.png" width="600px" height="280px" />
 
-`kind: TaskRun`
+3. `kind: TaskRun`
 
 <img alt="TaskRun" src="https://i.ibb.co/GWKknHh/Screen-Shot-2020-08-25-at-17-13-32.png" width="600px" height="330px" />
 
-`kind: PipelineRun`
+4. `kind: PipelineRun`
 
 <img alt="PipelineRun" src="https://i.ibb.co/YQXT8ZC/Screen-Shot-2020-08-25-at-17-13-20.png" width="600px" height="310px" />
 
-`kind: PipelineResource`
+5. `kind: PipelineResource`
 
 <img alt="PipelineResource" src="https://i.ibb.co/wrQ9kKS/Screen-Shot-2020-08-25-at-16-57-43.png" width="600px" height="310px" />
 
 ### CI/CD Task Flow
+- Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
+
 <img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="280px" />
+Tasks that finish 
 <img alt="CI/CD Pipeline" src="https://i.ibb.co/Twn8FcZ/Screen-Shot-2020-08-25-at-16-52-56.png" width="600px" height="310px" />
 
 ### Example Task/Pipeline Flow
@@ -71,7 +74,7 @@
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 <img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="320px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTk5NDk2NywtMTIyMzUyMjM5LDE3Mz
+eyJoaXN0b3J5IjpbMTQzODE0ODIzMCwtMTIyMzUyMjM5LDE3Mz
 MyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0
 NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNj
 csMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEz
