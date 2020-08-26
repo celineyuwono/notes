@@ -85,10 +85,10 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 	2. ssh-auth
 - Follow these steps to configure secrets: [https://github.com/tektoncd/pipeline/blob/master/docs/auth.md](https://github.com/tektoncd/pipeline/blob/master/docs/auth.md)
 - Above URL Summary: Tekton Task collect Secrets from secrets field of a ServiceAccount and uses them for checkout git repository or pull/push from/to Docker registry.
-- Add your public key in your 
+- Add your public key in your Git Repo.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2OTA3MDY2MSwxMjU3MzcyNTM2LC0xMj
+eyJoaXN0b3J5IjpbMjEzMTE3OTE2NSwxMjU3MzcyNTM2LC0xMj
 IzNTIyMzksMTczMzI3NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcw
 NjksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OC
 wtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEy
