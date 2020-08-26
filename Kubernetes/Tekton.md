@@ -88,12 +88,12 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 - Add your public key in your Git Repo.
 
 ### Configuring Webhooks
-- Get instant domain of EventListener.
+- Get instant domain of EventListener using `kubectl get vs` and paste it in your Git Repo Webhooks setting.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEzNTgxNzIyLDEyNTczNzI1MzYsLTEyMj
-M1MjIzOSwxNzMzMjc2ODIxLC0xODU0MzgwNTcwLDk5NTEyNzA2
-OSwtNjAzMTYxNDcxLC0xMjU3MDAxODc5LC0xMDM3Mjc5NzY4LC
-0xNjI2MjYxMzY3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3
-MjY5NTA2MSwxMzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMwOTI5MT
-ddfQ==
+eyJoaXN0b3J5IjpbMTYwMzQxNDMyMiwxMjU3MzcyNTM2LC0xMj
+IzNTIyMzksMTczMzI3NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcw
+NjksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OC
+wtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEy
+NzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOT
+E3XX0=
 -->
