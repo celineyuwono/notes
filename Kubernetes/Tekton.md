@@ -25,6 +25,7 @@
 	<li>Implemented using Kubernetes Custom Resource 	Definition (CRD).</li>
 	<li>Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource. Basically, extending Kubernetes resources.</li>
 	<li>**Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
+	
 	<img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="300px" /></li>
 	<li>5 New Custom Resources (CRD) provided by Tekton:
 		<ol>
@@ -95,10 +96,10 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzU0NTc2ODgsMTI1NzM3MjUzNiwtMT
-IyMzUyMjM5LDE3MzMyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3
-MDY5LC02MDMxNjE0NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3Nj
-gsLTE2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0x
-MjcyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5Mj
-kxN119
+eyJoaXN0b3J5IjpbNDE4NjI3ODIsMTI1NzM3MjUzNiwtMTIyMz
+UyMjM5LDE3MzMyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3MDY5
+LC02MDMxNjE0NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLT
+E2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcy
+Njk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN1
+19
 -->
