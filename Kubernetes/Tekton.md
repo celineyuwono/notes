@@ -22,7 +22,7 @@
 
 ### Tekton 5 New CRD
 - Implemented using Kubernetes Custom Resource Definition (CRD).
-- Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
+- Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource. Basically, extending Kubernetes resources.
 - **Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
 <img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="300px" />
 - 5 New Custom Resources (CRD) provided by Tekton:
@@ -65,7 +65,7 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 <img alt="Tekton Pipelines: example" src="https://i.ibb.co/bRDNz4L/Screen-Shot-2020-08-25-at-15-47-07.png" width="600px" height="280px" />
 </ul>
 
-### Example Task/Pipeline Flow
+### Example Task/Pipeline
 <ol>
 <li><b>Task 1: Build Task</b> -> Pulls code from Git Repo, builds a container images, pushes the image to a Container Registry. </li>
 <img alt="Build Task" src="https://i.ibb.co/4TXNYZT/Screen-Shot-2020-08-25-at-17-03-51.png" width="600px" height="315px" />
@@ -78,9 +78,9 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 <img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="320px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzgzNDI0MTcsLTEyMjM1MjIzOSwxNz
-MzMjc2ODIxLC0xODU0MzgwNTcwLDk5NTEyNzA2OSwtNjAzMTYx
-NDcxLC0xMjU3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMz
-Y3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwx
-MzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
+eyJoaXN0b3J5IjpbMTI1NzM3MjUzNiwtMTIyMzUyMjM5LDE3Mz
+MyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0
+NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNj
+csMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEz
+MTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN119
 -->
