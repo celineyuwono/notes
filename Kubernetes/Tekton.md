@@ -27,10 +27,11 @@
 <img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="300px" />
 
 - 5 New Custom Resources (CRD) provided by Tekton:
-	- **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
-	- **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
-	- **TaskRun** and **PipelineRun**: Invokes **Tasks** and **Pipelines**.
-	- **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
+	1. **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
+	2. **Pipelines:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). Tasks can run in multiple nodes. Can pass input from one task to next task. In the below example, we group faster tasks like linting and unit tests, and group slower tasks to run concurrently. This speeds up the pipeline speed.
+	3. **TaskRun**: Invokes **Tasks**.
+	4. **PipelineRun**: Invokes **Pipelines** 
+	5. **PipelineResources:** There are 4 types, including **Git, Image, Storage and Cluster**. These can be used to reference a **Git Repo**, **Container Registry**, etc. Using runtime information, we can run pipelines against different stages (ex. prod, stg), pull requests, or a different infrastructure. 
 
 ### Example Images & YAML Files
 `kind: Task`
@@ -70,9 +71,9 @@
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 <img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="320px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjM1MjIzOSwxNzMzMjc2ODIxLC0xOD
-U0MzgwNTcwLDk5NTEyNzA2OSwtNjAzMTYxNDcxLC0xMjU3MDAx
-ODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0ODI5OTkwMj
-UsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mjk2NzE4LDMw
-NTU3NTY0LC03NzMwOTI5MTddfQ==
+eyJoaXN0b3J5IjpbMTg5MTk5NDk2NywtMTIyMzUyMjM5LDE3Mz
+MyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0
+NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNj
+csMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEz
+MTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN119
 -->
