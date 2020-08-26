@@ -97,16 +97,16 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 - How to use:
 	- Get instant domain of EventListener with `kubectl get vs`.
 	- Set the domain of EventListener in your Git Repo > Webhooks.
-- After you configure Webhook `git push` event should be notified to EventListener which is running on your namespace.
-- TaskRun Pod is created by EventListener Pod. TaskRun Pod is created per event and after proceeded all steps the Pod status becomes "Completed".
+	- After you configure Webhook `git push` event should be notified to EventListener which is running on your namespace.
+	- TaskRun Pod is created by EventListener Pod. TaskRun Pod is created per event and after proceeded all steps the Pod status becomes "Completed".
 
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYyNTE4OTAyLC0xMTQ4MTQzNDI1LC0xOT
-E5MzYwODgxLDEyNTczNzI1MzYsLTEyMjM1MjIzOSwxNzMzMjc2
-ODIxLC0xODU0MzgwNTcwLDk5NTEyNzA2OSwtNjAzMTYxNDcxLC
-0xMjU3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMzY3LDE0
-ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwxMzE1Mj
-k2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
+eyJoaXN0b3J5IjpbLTE4ODcwMzYxMCwtMTE0ODE0MzQyNSwtMT
+kxOTM2MDg4MSwxMjU3MzcyNTM2LC0xMjIzNTIyMzksMTczMzI3
+NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcwNjksLTYwMzE2MTQ3MS
+wtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2MTM2Nywx
+NDgyOTk5MDI1LC04NjYwOTM2MTksLTEyNzI2OTUwNjEsMTMxNT
+I5NjcxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX0=
 -->
