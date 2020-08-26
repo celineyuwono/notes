@@ -77,10 +77,17 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 1. User interact with Kubernetes to create Task or Pipelines, which are stored in Kubernetes.
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 <img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="320px" />
+
+### Secrets
+- Needs secret to access Git Repo or a Container Registry.
+- Types
+	1. basic-auth
+	2. ssh-auth
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NzM3MjUzNiwtMTIyMzUyMjM5LDE3Mz
-MyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0
-NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNj
-csMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEz
-MTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN119
+eyJoaXN0b3J5IjpbMTM3MTExMTcwMiwxMjU3MzcyNTM2LC0xMj
+IzNTIyMzksMTczMzI3NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcw
+NjksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OC
+wtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEy
+NzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOT
+E3XX0=
 -->
