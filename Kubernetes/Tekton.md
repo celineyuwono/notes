@@ -102,14 +102,13 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 	- TaskRun Pod is created by EventListener Pod. TaskRun Pod is created per event and after proceeded all steps the Pod status becomes "Completed".
 
 ### Summary
-![Simplified Overview of Tekton](https://i.ibb.co/5MTNhJD/Screen-Shot-2020-08-26-at-12-16-37.png)
-
+<img alt="Simplified Overview of Tekton" src="https://i.ibb.co/5MTNhJD/Screen-Shot-2020-08-26-at-12-16-37.png" width="600px" height="315px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDkwNzUxLC0xMzIyNjk2MzgzLC0xMT
-Q4MTQzNDI1LC0xOTE5MzYwODgxLDEyNTczNzI1MzYsLTEyMjM1
-MjIzOSwxNzMzMjc2ODIxLC0xODU0MzgwNTcwLDk5NTEyNzA2OS
-wtNjAzMTYxNDcxLC0xMjU3MDAxODc5LC0xMDM3Mjc5NzY4LC0x
-NjI2MjYxMzY3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3Mj
-Y5NTA2MSwxMzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTdd
-fQ==
+eyJoaXN0b3J5IjpbMTI5NDA5NTI2MCwtMTMyMjY5NjM4MywtMT
+E0ODE0MzQyNSwtMTkxOTM2MDg4MSwxMjU3MzcyNTM2LC0xMjIz
+NTIyMzksMTczMzI3NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcwNj
+ksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OCwt
+MTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEyNz
+I2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOTE3
+XX0=
 -->
