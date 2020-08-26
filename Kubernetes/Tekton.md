@@ -29,8 +29,8 @@
 	<li>5 New Custom Resources (CRD) provided by Tekton:
 		<ol>
 			<li><b>Task:</b> Made up of <b>Steps</b>, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file)</li>
-			<li><b>Pipeline:</b> Made up of <b>Tasks</b>. You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). </li>
-			<li><b>TaskRun</b>: Invokes <b>Tasks</b>.</li>
+			<li><b>Pipeline:</b> Made up of <b>Tasks</b>. You can define order of tasks, run sequentially or concurrently, or create own task graph. </li>
+			<li><b>TaskRun</b>: Invokes <b>Tasks</b>. The Tekton API enables functionality to be separated from configuration such that steps can be reusable.</li>
 			<li><b>PipelineRun</b>: Invokes <b>Pipeline</b></li>
 			<li><b>PipelineResources:</b> There are 4 types, including <b>Git, Image, Storage and Cluster</b>. These can be used to reference a <b>Git Repo</b>, <b>Container Registry</b>, etc. Using runtime information, we can run pipelines against different stages (ex. prod, staging), pull requests, or a different infrastructure. </li>
 		</ol>
@@ -93,7 +93,7 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 - Add your public key in your Git Repo.
 
 ### Configuring Webhooks with Triggers
-- **Triggers** is a Kubernetes CRD controller that allows you to extract information from events payloads (a "trigger") to create Kubernetes resources.
+- **Triggers** is a Kubernetes CRD controller that allows you to extract information from events payloads (a "trigger") to create Kubernetes resources. More information here: [https://github.com/tektoncd/triggers](https://github.com/tektoncd/triggers). 
 - EventListener is a resident process to receive notification and create Tekton **TaskRun** with parameters dynamically.
 - How to use:
 	- Get instant domain of EventListener with `kubectl get vs`.
@@ -104,10 +104,10 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 ### Summary
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDAzNDM5NywtMTE0ODE0MzQyNSwtMT
-kxOTM2MDg4MSwxMjU3MzcyNTM2LC0xMjIzNTIyMzksMTczMzI3
-NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcwNjksLTYwMzE2MTQ3MS
-wtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OCwtMTYyNjI2MTM2Nywx
-NDgyOTk5MDI1LC04NjYwOTM2MTksLTEyNzI2OTUwNjEsMTMxNT
-I5NjcxOCwzMDU1NzU2NCwtNzczMDkyOTE3XX0=
+eyJoaXN0b3J5IjpbLTEzMjI2OTYzODMsLTExNDgxNDM0MjUsLT
+E5MTkzNjA4ODEsMTI1NzM3MjUzNiwtMTIyMzUyMjM5LDE3MzMy
+NzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0Nz
+EsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNjcs
+MTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEzMT
+UyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN119
 -->
