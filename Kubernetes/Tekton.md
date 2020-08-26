@@ -14,18 +14,17 @@
 - Get my code to source to production as quickly and securely as possible.
 <img alt="CI/CD Example" src="https://i.ibb.co/tKZXXRz/Screen-Shot-2020-08-25-at-14-58-04.png" width="600px" height="330px" />
 
-### Tekton
-- Tekton is a shared set of open source Cloud Native building blocks for CI/CD system. Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
+### What is Tekton
+- Cloud native components for defining CI/CD pipelines.
+- Even though Tekton runs on Kubernetes, it targets on any platform, language, and framework.
 - Tekton just provides a framework for executing actions.
 - Started on Kubernetes Knative project. People can build images on Kubernetes, but wanted to run tests on those images and define more complex pipelines.
 
-### Tekton Pipelines
-- Cloud native components for defining CI/CD pipelines.
+### Tekton 5 New CRD
 - Implemented using Kubernetes Custom Resource Definition (CRD).
 - Kubernetes resources: Pods, Services, Deployments, but CRD can define a new resource and create binaries called controllers that can act upon the new resource.
 - **Steps:** Existing type: `Kubernetes Container Spec`. Steps specify image, shell commands, or arguments. Steps inside one Task share a Pod for easy communication.
 <img alt="Steps" src="https://i.ibb.co/q9qfB31/Screen-Shot-2020-08-25-at-17-11-04.png" width="600px" height="300px" />
-
 - 5 New Custom Resources (CRD) provided by Tekton:
 	1. **Task:** Made up of **Steps**, run sequentially on same K8s node. Runs as a pod. Can specify input and output (using parameters or PipelineResources defined in the task YAML file).
 	2. **Pipeline:** Made up of **Tasks** . You can define order of tasks, run sequentially or concurrently, or create own task graph (using keywords like `runAfter`). 
@@ -79,9 +78,9 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 2. When user wants to run, users create Task Run or PipelineRun. Picked up by controllers, and these controllers create `pods`.
 <img alt="Tekton Pipelines: architecture" src="https://i.ibb.co/ySJ4s7N/Screen-Shot-2020-08-25-at-16-14-20.png" width="600px" height="320px" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MDYyODc2MywtMTIyMzUyMjM5LDE3Mz
-MyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3MDY5LC02MDMxNjE0
-NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3NjgsLTE2MjYyNjEzNj
-csMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0xMjcyNjk1MDYxLDEz
-MTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5MjkxN119
+eyJoaXN0b3J5IjpbLTE5NzgzNDI0MTcsLTEyMjM1MjIzOSwxNz
+MzMjc2ODIxLC0xODU0MzgwNTcwLDk5NTEyNzA2OSwtNjAzMTYx
+NDcxLC0xMjU3MDAxODc5LC0xMDM3Mjc5NzY4LC0xNjI2MjYxMz
+Y3LDE0ODI5OTkwMjUsLTg2NjA5MzYxOSwtMTI3MjY5NTA2MSwx
+MzE1Mjk2NzE4LDMwNTU3NTY0LC03NzMwOTI5MTddfQ==
 -->
