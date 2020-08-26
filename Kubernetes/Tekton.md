@@ -83,11 +83,13 @@ In the below example, we group faster tasks like linting and unit tests, and gro
 - Types
 	1. basic-auth
 	2. ssh-auth
+- Follow these steps to configure secrets: [https://github.com/tektoncd/pipeline/blob/master/docs/auth.md](https://github.com/tektoncd/pipeline/blob/master/docs/auth.md)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MTExMTcwMiwxMjU3MzcyNTM2LC0xMj
-IzNTIyMzksMTczMzI3NjgyMSwtMTg1NDM4MDU3MCw5OTUxMjcw
-NjksLTYwMzE2MTQ3MSwtMTI1NzAwMTg3OSwtMTAzNzI3OTc2OC
-wtMTYyNjI2MTM2NywxNDgyOTk5MDI1LC04NjYwOTM2MTksLTEy
-NzI2OTUwNjEsMTMxNTI5NjcxOCwzMDU1NzU2NCwtNzczMDkyOT
-E3XX0=
+eyJoaXN0b3J5IjpbLTE4NjI3Nzk0NzksMTI1NzM3MjUzNiwtMT
+IyMzUyMjM5LDE3MzMyNzY4MjEsLTE4NTQzODA1NzAsOTk1MTI3
+MDY5LC02MDMxNjE0NzEsLTEyNTcwMDE4NzksLTEwMzcyNzk3Nj
+gsLTE2MjYyNjEzNjcsMTQ4Mjk5OTAyNSwtODY2MDkzNjE5LC0x
+MjcyNjk1MDYxLDEzMTUyOTY3MTgsMzA1NTc1NjQsLTc3MzA5Mj
+kxN119
 -->
