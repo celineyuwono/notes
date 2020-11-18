@@ -7,8 +7,12 @@
 - Application ~ Session is Application Layer because they handle data. Data is broken up in Transport Layer.
 
 ### Application Layer
-- Application, protocols, and services that interface with the end user.
-- Dat 
+- Application: Application, protocols, and services that interface with the end user.
+- Presentation: Data is formatted, converted, encrypted/decrypted, compressed/decompressed and sent or presented to the user (MIME types).
+- Session: Open, close, and manage a session between end-user application processes (RPC). 
+
+### Transport
+- Facilitate end-to-end communications between multiple applicatios si
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MDQ0MzU4MF19
+eyJoaXN0b3J5IjpbNTY5MjI4NDQzXX0=
 -->
