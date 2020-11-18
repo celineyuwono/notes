@@ -8,8 +8,14 @@
 - Internet already has TCP, IP, and DNS. New protocol = HTTP.
 - Existing Hypertext Standard: Documents with links that connects with other documents.
 
+### HTTP Request Authentication (Django)
+1. Basic Authorization
+2. Session Authorization
+3. Token Authorization
+4. Remote User Authorization 
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0Mzk2Mzg2MF19
+eyJoaXN0b3J5IjpbNDYzMTkyNTc0XX0=
 -->
