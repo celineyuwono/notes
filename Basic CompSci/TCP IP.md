@@ -12,7 +12,9 @@
 - Session: Open, close, and manage a session between end-user application processes (RPC). 
 
 ### Transport
-- Facilitate end-to-end communications between multiple applicatios si
+- Facilitate end-to-end communications between multiple application simultaneously (ports). Example. Port 22 (ssh), port 21 (ftp), port 80 (http).
+- Reliable and unreliable end-to-end data transport and data stream services (TCP - reliable -> , UDP - unreliable, SCTP).
+- Connection oriented, connectionless communications, and data stream
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5MjI4NDQzXX0=
+eyJoaXN0b3J5IjpbNzgzNTM4ODldfQ==
 -->
