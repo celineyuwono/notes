@@ -13,11 +13,12 @@
 ![Basic Auth](https://i.ibb.co/KVRF33t/Screen-Shot-2020-11-18-at-17-34-57.png)
 2. Session Authorization
 ![Session Auth](https://i.ibb.co/VHRGbC5/Screen-Shot-2020-11-18-at-17-36-35.png)
+Cons: Multiple session between multiple devices and multiple servers.
 3. Token Authorization
 4. Remote User Authorization 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODg5MjA4MTJdfQ==
+eyJoaXN0b3J5IjpbMTg0MTI5NDU5M119
 -->
