@@ -11,10 +11,18 @@
 - Presentation: Data is formatted, converted, encrypted/decrypted, compressed/decompressed and sent or presented to the user (MIME types).
 - Session: Open, close, and manage a session between end-user application processes (RPC). 
 
-### Transport
+### Transport Layer
 - Facilitate end-to-end communications between multiple application simultaneously (ports). Example. Port 22 (ssh), port 21 (ftp), port 80 (http).
-- Reliable and unreliable end-to-end data transport and data stream services (TCP - reliable -> , UDP - unreliable, SCTP).
-- Connection oriented, connectionless communications, and data stream
+- Reliable and unreliable end-to-end data transport and data stream services (TCP - reliable -> http, UDP - unreliable -> if no need reliability, SCTP mail - new).
+- Connection oriented, connectionless communications, and data stream services (session establishment and termination).
+- Example:
+
+### Network Layer (Internet Layer)
+- Provide host addressing (IP)
+- Choose the best path to the destination network (Routing)
+- Switch packets out of the correct interface (Forwarding)
+- Mantain quality of service (QoS). Example. Video needs more bandwidth.
+- Connectionless end-to-end networking.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNTM4ODldfQ==
+eyJoaXN0b3J5IjpbLTE4MDY3NjM0NDldfQ==
 -->
