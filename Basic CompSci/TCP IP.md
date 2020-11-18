@@ -25,8 +25,11 @@
 - Connectionless end-to-end networking.
 
 ### Network Access Layer
-- Data Link: LLC and MSAC
+- Data Link: LLC and MSAC.
 - Physical: Bits.
+
+### Encapsulation
+![Encapsulation](https://i.ibb.co/XymwfsS/Screen-Shot-2020-11-18-at-17-57-28.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjc5Mzg5MjFdfQ==
+eyJoaXN0b3J5IjpbLTE0NTc1NzczM119
 -->
