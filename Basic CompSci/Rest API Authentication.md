@@ -10,14 +10,14 @@
 
 ### HTTP Request Authentication (Django)
 1. Basic Authorization
-![](https://i.ibb.co/KVRF33t/Screen-Shot-2020-11-18-at-17-34-57.png)
+![Basic Auth](https://i.ibb.co/KVRF33t/Screen-Shot-2020-11-18-at-17-34-57.png)
 2. Session Authorization
-
+![Session Auth](https://i.ibb.co/VHRGbC5/Screen-Shot-2020-11-18-at-17-36-35.png)
 3. Token Authorization
 4. Remote User Authorization 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODMyMDI4MF19
+eyJoaXN0b3J5IjpbLTE5ODg5MjA4MTJdfQ==
 -->
