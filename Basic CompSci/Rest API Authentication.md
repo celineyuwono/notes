@@ -17,10 +17,12 @@ Cons: Multiple session between multiple devices and multiple servers.
 3. Token Authorization: Recommended DEFAULT
 ![Token Auth](https://i.ibb.co/xfBLpJc/Screen-Shot-2020-11-18-at-17-39-29.png)
 Cons: Never expire, so if token is stolen, anyone can use it.
-5. Remote User Authorization 
 
 
-
+### JWT
+- Payload
+- Header
+- Verify Signature
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExNDM0MjMyXX0=
+eyJoaXN0b3J5IjpbMTgxODQ1NjIxMF19
 -->
