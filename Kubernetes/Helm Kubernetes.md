@@ -20,9 +20,9 @@
 	- Tiller will execute the request and create or change components inside the Kubernetes cluster.  
 	- Tiller will also save a copy of your Helm Chart for future reference, creating a history of chart executions called the **chart history**. 
 	- How Helm works is that it will compare the previous chart and current chart and make changes to the deployment based on the differences of the charts.  
-	- In case of an upgrade  goes wrong, we can rollback. 
+	- In case of an upgrade goes wrong, we can rollback. 
 	- The downside is Tiller has too much permissions in Kubernetes Cluster; It can create, update, and delete components itself. This is a big security issue.  
 	- Helm 3 solves this by removing Tiller, but that means that the release management feature is nonexistent.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3NDU4NDJdfQ==
+eyJoaXN0b3J5IjpbMTcxNzA1Mzg3NiwyOTc0NTg0Ml19
 -->
