@@ -12,8 +12,8 @@
 - Session: Open, close, and manage a session between end-user application processes (RPC). 
 
 ### Transport Layer
-- Facilitate end-to-end communications between multiple application simultaneously (ports). Example. Port 22 (ssh), port 21 (ftp), port 80 (http).
-- Reliable and unreliable end-to-end data transport and data stream services (TCP - reliable -> http, UDP - unreliable -> if no need reliability, SCTP mail - new).
+- Facilitate end-to-end communications between multiple application simultaneously (create port numbers). Example. Port 22 (ssh), port 21 (ftp), port 80 (http).
+- Reliable and unreliable end-to-end data transport and data stream services. (TCP - reliable -> http, UDP - unreliable -> if no need reliability ex. online feed, live transmission, SCTP mail - new).
 - Connection oriented, connectionless communications, and data stream services (session establishment and termination).
 - Example: 3 way handshake, establishing connection.
 
@@ -31,5 +31,6 @@
 ### Encapsulation
 ![Encapsulation](https://i.ibb.co/XymwfsS/Screen-Shot-2020-11-18-at-17-57-28.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTk2MTU1NSwtMTQ1NzU3NzMzXX0=
+eyJoaXN0b3J5IjpbNTYwNjI2NDA4LDE4Njk5NjE1NTUsLTE0NT
+c1NzczM119
 -->
