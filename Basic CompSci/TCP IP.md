@@ -42,7 +42,9 @@ Summary
 5. PHYSICAL: 010101010101010
 6. Physical~Network layer detach in receiving client.
 7. Transport layer wait until all segments is received, and combines it, give it to application layer
+
+B
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzczMzc5MjksLTE0MzIxNTY5MzYsMT
-g2OTk2MTU1NSwtMTQ1NzU3NzMzXX0=
+eyJoaXN0b3J5IjpbMTMyMzQxNjczNSwtMTczNzMzNzkyOSwtMT
+QzMjE1NjkzNiwxODY5OTYxNTU1LC0xNDU3NTc3MzNdfQ==
 -->
