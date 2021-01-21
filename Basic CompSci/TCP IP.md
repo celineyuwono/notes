@@ -36,10 +36,11 @@
 
 Summary
 1. Data
-2. TH -  Segment 1, TH -  Segment 2
-3. Packet: NH - TH - Segment 1
-4. 
+2. TRANSPORT: TH -  Segment 1, TH -  Segment 2
+3. NETWORK: (Packet) NH - TH - Segment 1 (Segment 2 same process)
+4. DATA LINK: DH - NH - TH - Segment 1
+5. PHYSICAL: 010101010101010
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTkwMzQ5NSwtMTQzMjE1NjkzNiwxOD
-Y5OTYxNTU1LC0xNDU3NTc3MzNdfQ==
+eyJoaXN0b3J5IjpbNjU3OTc5ODM4LC0xNDMyMTU2OTM2LDE4Nj
+k5NjE1NTUsLTE0NTc1NzczM119
 -->
