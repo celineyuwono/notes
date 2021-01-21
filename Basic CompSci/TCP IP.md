@@ -33,7 +33,9 @@
 
 ### Encapsulation
 ![Encapsulation](https://i.ibb.co/XymwfsS/Screen-Shot-2020-11-18-at-17-57-28.png)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIxNTY5MzYsMTg2OTk2MTU1NSwtMT
-Q1NzU3NzMzXX0=
+eyJoaXN0b3J5IjpbMTY4MjUxMDI5MiwtMTQzMjE1NjkzNiwxOD
+Y5OTYxNTU1LC0xNDU3NTc3MzNdfQ==
 -->
