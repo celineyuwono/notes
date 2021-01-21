@@ -46,8 +46,12 @@ Summary
 - Build software together partner
 - Coaching, advocates of discipline for partner company
 - Wants Japanes company to have their own tech team
+
+- Want to write code
+- Wide variety of job: Test, etc.
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTE1MzQwMjYsLTk2MzA4ODQyMSwtMT
-czNzMzNzkyOSwtMTQzMjE1NjkzNiwxODY5OTYxNTU1LC0xNDU3
-NTc3MzNdfQ==
+eyJoaXN0b3J5IjpbMTMyNzk0MDE1MywtMTM1MTUzNDAyNiwtOT
+YzMDg4NDIxLC0xNzM3MzM3OTI5LC0xNDMyMTU2OTM2LDE4Njk5
+NjE1NTUsLTE0NTc1NzczM119
 -->
