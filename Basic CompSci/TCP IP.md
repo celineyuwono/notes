@@ -27,12 +27,13 @@
 
 ### Network Access Layer
 - Data Link: LLC and MSAC.
-	- 
-- Physical: Bits.
+	- FRAME! MAC address (hardware address, cannot be changed, in every hardware).
+	- Error checking.
+- Physical: Bits. Actual data transfer, cables, wire.
 
 ### Encapsulation
 ![Encapsulation](https://i.ibb.co/XymwfsS/Screen-Shot-2020-11-18-at-17-57-28.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk3MTg4ODU1LDE4Njk5NjE1NTUsLTE0NT
-c1NzczM119
+eyJoaXN0b3J5IjpbLTE0MzIxNTY5MzYsMTg2OTk2MTU1NSwtMT
+Q1NzU3NzMzXX0=
 -->
