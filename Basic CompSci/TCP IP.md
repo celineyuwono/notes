@@ -18,6 +18,7 @@
 - Example: 3 way handshake, establishing connection.
 
 ### Network Layer (Internet Layer)
+- Packets! Add IP address here. Finds best path of IP address.
 - Provide host addressing (IP): Across world and internet.
 - Choose the best path to the destination network (Routing)
 - Switch packets out of the correct interface (Forwarding)
@@ -26,11 +27,12 @@
 
 ### Network Access Layer
 - Data Link: LLC and MSAC.
+	- 
 - Physical: Bits.
 
 ### Encapsulation
 ![Encapsulation](https://i.ibb.co/XymwfsS/Screen-Shot-2020-11-18-at-17-57-28.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwNjI2NDA4LDE4Njk5NjE1NTUsLTE0NT
+eyJoaXN0b3J5IjpbOTk3MTg4ODU1LDE4Njk5NjE1NTUsLTE0NT
 c1NzczM119
 -->
