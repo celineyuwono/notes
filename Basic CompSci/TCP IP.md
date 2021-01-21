@@ -43,8 +43,9 @@ Summary
 6. Physical~Network layer detach in receiving client.
 7. Transport layer wait until all segments is received, and combines it, give it to application layer
 
-B
+- Build software together partner
+- Coaching, advocates of discipline for partner company
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMzQxNjczNSwtMTczNzMzNzkyOSwtMT
+eyJoaXN0b3J5IjpbLTk2MzA4ODQyMSwtMTczNzMzNzkyOSwtMT
 QzMjE1NjkzNiwxODY5OTYxNTU1LC0xNDU3NTc3MzNdfQ==
 -->
