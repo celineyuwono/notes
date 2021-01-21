@@ -40,7 +40,9 @@ Summary
 3. NETWORK: (Packet) NH - TH - Segment 1 (Segment 2 same process)
 4. DATA LINK: DH - NH - TH - Segment 1
 5. PHYSICAL: 010101010101010
+6. Physical~Network layer detach in receiving client.
+7. Transport layer wait until all segments is received, and combines it, give it to application layer
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3OTc5ODM4LC0xNDMyMTU2OTM2LDE4Nj
-k5NjE1NTUsLTE0NTc1NzczM119
+eyJoaXN0b3J5IjpbLTE3MzczMzc5MjksLTE0MzIxNTY5MzYsMT
+g2OTk2MTU1NSwtMTQ1NzU3NzMzXX0=
 -->
