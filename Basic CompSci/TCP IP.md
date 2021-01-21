@@ -49,9 +49,9 @@ Summary
 
 - Want to write code
 - Wide variety of job: Test, etc.
-- 
+- Teach, coach, influence the industry
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzk0MDE1MywtMTM1MTUzNDAyNiwtOT
+eyJoaXN0b3J5IjpbMTA4NzAxMTI2MCwtMTM1MTUzNDAyNiwtOT
 YzMDg4NDIxLC0xNzM3MzM3OTI5LC0xNDMyMTU2OTM2LDE4Njk5
 NjE1NTUsLTE0NTc1NzczM119
 -->
