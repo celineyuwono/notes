@@ -8,7 +8,7 @@
 
 ### Application Layer
 - Application: Application, protocols, and services that interface with the end user.
-- Presentation: Data is formatted, converted, encrypted/decrypted, compressed/decompressed and sent or presented to the user (MIME types).
+- Presentation: Data is formatted, converted, encrypted/decrypted, compressed/decompressed and sent or presented to the user (MIME types). TSL, SSL encryption.
 - Session: Open, close, and manage a session between end-user application processes (RPC). 
 
 ### Transport Layer
@@ -31,5 +31,5 @@
 ### Encapsulation
 ![Encapsulation](https://i.ibb.co/XymwfsS/Screen-Shot-2020-11-18-at-17-57-28.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc1NzczM119
+eyJoaXN0b3J5IjpbMTg2OTk2MTU1NSwtMTQ1NzU3NzMzXX0=
 -->
