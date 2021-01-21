@@ -34,8 +34,12 @@
 ### Encapsulation
 ![Encapsulation](https://i.ibb.co/XymwfsS/Screen-Shot-2020-11-18-at-17-57-28.png)
 
-
+Summary
+1. Data
+2. TH -  Segment 1, TH -  Segment 2
+3. Packet: NH - TH - Segment 1
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MjUxMDI5MiwtMTQzMjE1NjkzNiwxOD
+eyJoaXN0b3J5IjpbMjA2NTkwMzQ5NSwtMTQzMjE1NjkzNiwxOD
 Y5OTYxNTU1LC0xNDU3NTc3MzNdfQ==
 -->
