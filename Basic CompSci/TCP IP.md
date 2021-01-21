@@ -45,7 +45,9 @@ Summary
 
 - Build software together partner
 - Coaching, advocates of discipline for partner company
+- Wants Japanes company to have their own tech team
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzA4ODQyMSwtMTczNzMzNzkyOSwtMT
-QzMjE1NjkzNiwxODY5OTYxNTU1LC0xNDU3NTc3MzNdfQ==
+eyJoaXN0b3J5IjpbLTEzNTE1MzQwMjYsLTk2MzA4ODQyMSwtMT
+czNzMzNzkyOSwtMTQzMjE1NjkzNiwxODY5OTYxNTU1LC0xNDU3
+NTc3MzNdfQ==
 -->
