@@ -22,7 +22,7 @@
 - Provide host addressing (IP): Across world and internet.
 - Choose the best path to the destination network (Routing)
 - Switch packets out of the correct interface (Forwarding)
-- Mantain quality of service (QoS). Example. Video needs more bandwidth.
+- Maintain quality of service (QoS). Example. Video needs more bandwidth.
 - Connectionless end-to-end networking.
 
 ### Network Access Layer
@@ -52,7 +52,8 @@ Summary
 - Teach, coach, influence the industry
 - 1 JP intv, 1 coding intv, 2 behavioral intv
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDAxOTQ3ODcsMTA4NzAxMTI2MCwtMT
-M1MTUzNDAyNiwtOTYzMDg4NDIxLC0xNzM3MzM3OTI5LC0xNDMy
-MTU2OTM2LDE4Njk5NjE1NTUsLTE0NTc1NzczM119
+eyJoaXN0b3J5IjpbMTY1NDczMzMwNCwtMTcwMDE5NDc4NywxMD
+g3MDExMjYwLC0xMzUxNTM0MDI2LC05NjMwODg0MjEsLTE3Mzcz
+Mzc5MjksLTE0MzIxNTY5MzYsMTg2OTk2MTU1NSwtMTQ1NzU3Nz
+MzXX0=
 -->
