@@ -10,7 +10,11 @@
 - Add or remove slide cos bimyo
 - Minna yatteru
 - https://www.xpand-it.com/blog/top-5-agile-methodologies/
+
+スクラムチームの構成  ​
+- PEM is Solution Owner
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDAzMTQ4NTEsLTE5Mjk2ODY4MDUsOD
-k3NjQxMjExLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEwODE5MTk1MywtMTkyOTY4NjgwNSw4OT
+c2NDEyMTEsLTIwODg3NDY2MTJdfQ==
 -->
