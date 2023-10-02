@@ -18,7 +18,9 @@
 - My opinion: No need to mention Solution Owner -> If want add in next steps after Day 3 (this is a good idea)
 
 
+NEED ONE MORE SLIDE TO TRANSITION TO SCRUM
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDQyMzU1OSwtMTkyOTY4NjgwNSw4OT
+eyJoaXN0b3J5IjpbLTEyNDM4MjgzMCwtMTkyOTY4NjgwNSw4OT
 c2NDEyMTEsLTIwODg3NDY2MTJdfQ==
 -->
