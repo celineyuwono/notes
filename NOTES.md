@@ -13,8 +13,8 @@
 
 スクラムチームの構成  ​
 - PEM is Solution Owner
-- 
+- I think no need to mention Solution Owner
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODE5MTk1MywtMTkyOTY4NjgwNSw4OT
-c2NDEyMTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbODkxNjgxMzI2LC0xOTI5Njg2ODA1LDg5Nz
+Y0MTIxMSwtMjA4ODc0NjYxMl19
 -->
