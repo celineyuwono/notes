@@ -7,14 +7,17 @@
 - Other companies have documents (keiyaku)
 
 スクラムの定義​
-- Add or remove slide cos bimyo
-- Minna yatteru
+- Add info to slide or remove it completely?
+- Show everyone is mostly using Scrum
 - https://www.xpand-it.com/blog/top-5-agile-methodologies/
+- My opinion: Just keep it as it is.
 
 スクラムチームの構成  ​
-- PEM is Solution Owner
-- I think no need to mention Solution Owner
+- In Slalom, PEM uses Solution Owner
+- My opinion: No need to mention Solution Owner -> If want add in next steps after Day 3
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxNjgxMzI2LC0xOTI5Njg2ODA1LDg5Nz
-Y0MTIxMSwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTE2ODYxOTM3MjYsLTE5Mjk2ODY4MDUsOD
+k3NjQxMjExLC0yMDg4NzQ2NjEyXX0=
 -->
