@@ -8,7 +8,9 @@
 
 スクラムの定義​
 - Add or remove slide cos bimyo
+- Minna yatteru
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYwNzE0NjksLTE5Mjk2ODY4MDUsOD
-k3NjQxMjExLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNzM3NzIxNDA0LC0xOTI5Njg2ODA1LDg5Nz
+Y0MTIxMSwtMjA4ODc0NjYxMl19
 -->
