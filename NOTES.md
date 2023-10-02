@@ -9,8 +9,8 @@
 スクラムの定義​
 - Add or remove slide cos bimyo
 - Minna yatteru
-- 
+- https://www.xpand-it.com/blog/top-5-agile-methodologies/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3NzIxNDA0LC0xOTI5Njg2ODA1LDg5Nz
-Y0MTIxMSwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTExMDAzMTQ4NTEsLTE5Mjk2ODY4MDUsOD
+k3NjQxMjExLC0yMDg4NzQ2NjEyXX0=
 -->
